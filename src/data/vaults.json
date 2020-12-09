@@ -1,0 +1,478 @@
+[
+  {
+    "id": "bifi-maxi",
+    "name": "BIFI Maxi",
+    "contract": "0xf7069e41C57EcC5F122093811d8c75bdB5f7c14e",
+    "oracle": "thugs",
+    "oracleId": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-bifi-bnb",
+    "name": "BIFI-BNB TLP",
+    "contract": "0x29C36e5fcB1dC4a3D4B46C00F82b2cee39c5540e",
+    "oracle": "thugs-lp",
+    "oracleId": "street-bifi-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "thugs-drugs-guns",
+    "name": "DRUGS v2",
+    "contract": "0x8AE31751A226B0C5357a377E53B6DB12bDF5e64d",
+    "oracle": "thugs",
+    "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-drugs-bnb",
+    "name": "DRUGS-BNB TLP v2",
+    "contract": "0x9D729179E429153a6aca26389e6a9b625431C79B",
+    "oracle": "thugs-lp",
+    "oracleId": "street-drugs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-thugs-bnb",
+    "name": "THUGS-BNB TLP v2",
+    "contract": "0xe789711992020575e07381fdb3dFDc251Ec4d027",
+    "oracle": "thugs-lp",
+    "oracleId": "street-thugs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-cred-bnb",
+    "name": "CRED-BNB TLP",
+    "contract": "0x0adc208151e6b7AE1D884b64fDA662d10B4F6174",
+    "oracle": "thugs-lp",
+    "oracleId": "street-cred-bnb",
+    "tvl": 0
+  },
+  {
+    "id": "street-guns-bnb",
+    "name": "GUNS-BNB TLP v2",
+    "contract": "0x68aE2aB6448884714DDf11C8d55ea7578C65D502",
+    "oracle": "thugs-lp",
+    "oracleId": "street-guns-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-busd-bnb",
+    "name": "BUSD-BNB TLP v2",
+    "contract": "0x2091b25f02275a4D791075f83c904Fa5Fb96B5A7",
+    "oracle": "thugs-lp",
+    "oracleId": "street-busd-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-btc-bnb",
+    "name": "BTC-BNB LP v2",
+    "contract": "0x498515AB07d72d24A85343322834a66e79e146f8",
+    "oracle": "thugs-lp",
+    "oracleId": "street-btc-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-eth-bnb",
+    "name": "ETH-BNB TLP v2",
+    "contract": "0x5EA6fE190f9F7B814fDc438A6CC448d094740588",
+    "oracle": "thugs-lp",
+    "oracleId": "street-eth-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-panacakelp-thugs-bnb",
+    "name": "THUGS-BNB Pancake LP",
+    "contract": "0x7A99078ba8960871233377C7aE6B5d2A61229A43",
+    "oracle": "thugs-lp",
+    "oracleId": "street-panacakelp-thugs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-narwhallp-thugs-bnb",
+    "name": "THUGS-BNB Narwhal LP",
+    "contract": "0xcB60700DB502F9908B8656C38D052c1BD54D291c",
+    "oracle": "thugs-lp",
+    "oracleId": "street-panacakelp-thugs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-dai-bnb",
+    "name": "DAI-BNB TLP",
+    "contract": "0x3CAd2fF669865359b80a2d948A10e1810f7486D7",
+    "oracle": "thugs-lp",
+    "oracleId": "street-dai-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-usdt-bnb",
+    "name": "USDT-BNB TLP",
+    "contract": "0x390f28E3919D2c4d9624Ae9AeBe6da25322ED56D",
+    "oracle": "thugs-lp",
+    "oracleId": "street-usdt-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-bliq-bnb",
+    "name": "BLIQ-BNB TLP",
+    "contract": "0x84d95337c83B84688DFE678117e1539786f8c4Cb",
+    "oracle": "thugs-lp",
+    "oracleId": "street-bliq-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-eos-bnb",
+    "name": "EOS-BNB LP",
+    "contract": "0xd4572009c7580DEfa0251FFD811b04386Dd41570",
+    "oracle": "thugs-lp",
+    "oracleId": "street-eos-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-bhc-bnb",
+    "name": "BHC-BNB TLP",
+    "contract": "0x5417f74221abD485C34429eb90EBA100FAC9A6e1",
+    "oracle": "thugs-lp",
+    "oracleId": "street-bhc-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-bch-bnb",
+    "name": "BCH-BNB TLP",
+    "contract": "0x1bcc82ce9b387E16fC383af563fd400074E3f060",
+    "oracle": "thugs-lp",
+    "oracleId": "street-bch-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-link-bnb",
+    "name": "LINK-BNB TLP",
+    "contract": "0x3DbBDFA0A412Fd15ef9fc4CEb3Fcc19Ff329980b",
+    "oracle": "thugs-lp",
+    "oracleId": "street-link-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-nar-bnb",
+    "name": "StreetSwap: NAR-BNB TLP",
+    "contract": "0x06fb2e27155c2a551aF34E80aE67f569673dDD73",
+    "oracle": "thugs-lp",
+    "oracleId": "street-nar-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-drugs-bnb-v1",
+    "name": "StreetSwap: DRUGS-BNB TLP",
+    "contract": "0xa4aB709f5eB75f3213734fC227D9e27352d1DB6c",
+    "oracle": "thugs-lp",
+    "oracleId": "street-drugs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-guns-bnb-v1",
+    "name": "StreetSwap: GUNS-BNB TLP",
+    "contract": "0xA2bcB1D7955AEa2F5B93C308E199337a77E7bAd4",
+    "oracle": "thugs-lp",
+    "oracleId": "street-guns-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-cake",
+    "name": "PancakeSwap: CAKE",
+    "contract": "0xc713ca7cb8edfE238ea652D772d41dde47A9a62d",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-twt",
+    "name": "PancakeSwap: CAKE TWT v2",
+    "contract": "0x260879777DB293541DbC9a27c3C2fAD9c9bb48D3",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-hard",
+    "name": "PancakeSwap: CAKE HARD",
+    "contract": "0x4B4e5F2CeEdfF00D2DD13874714C1Ef6Ea1Cd8a7",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-stax",
+    "name": "PancakeSwap: CAKE STAX",
+    "contract": "0xa72D14bec8c37f3A9487B057C7635e55f85f50c4",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-fil",
+    "name": "ForTube: FIL",
+    "contract": "0x5Bea18aBa4825bbE6450c280fBE8c22B1489cDd4",
+    "oracle": "coingecko",
+    "oracleId": "filecoin",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-atom",
+    "name": "ForTube: ATOM",
+    "contract": "0x6c98707D6F3e0909E377A0Db7ef7895098076ec3",
+    "oracle": "coingecko",
+    "oracleId": "cosmos",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-xtz",
+    "name": "ForTube: XTZ",
+    "contract": "0x4480A061130c56b58E8Fa9adeC5BBbB9609122dB",
+    "oracle": "coingecko",
+    "oracleId": "tezos",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-busd",
+    "name": "ForTube: BUSD",
+    "contract": "0xD6fca61Edb1cD0259320A6E0899E8aD1044BBCda",
+    "oracle": "coingecko",
+    "oracleId": "binance-usd",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-link",
+    "name": "ForTube: LINK",
+    "contract": "0x7bF55acDe006C398Bb605Ae564A8F832F80000ee",
+    "oracle": "coingecko",
+    "oracleId": "link",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-dot",
+    "name": "ForTube: DOT",
+    "contract": "0x63a2CEF28904956552714ddb226ceE96c3F0C9EF",
+    "oracle": "coingecko",
+    "oracleId": "polkadot",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-usdt",
+    "name": "ForTube: USDT",
+    "contract": "0xc16187F3eb15aEE949e7d784906d53fd7E364B26",
+    "oracle": "coingecko",
+    "oracleId": "tether",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-eth",
+    "name": "ForTube: ETH",
+    "contract": "0xc87049670329a82724e7135A26c73c3496a1Db23",
+    "oracle": "coingecko",
+    "oracleId": "ethereum",
+    "tvl": 0
+  },
+
+  {
+    "id": "fortube-btcb",
+    "name": "ForTube: BTCB",
+    "contract": "0x6F0Df0858542fC4A1c7f82c14fAA490d7763592F",
+    "oracle": "coingecko",
+    "oracleId": "bitcoin-bep2",
+    "tvl": 0
+  },
+
+  {
+    "id": "fry-burger-v2",
+    "name": "FryWorld: BURGER v2",
+    "contract": "0x2fd5f579e2cF9e3cb8127BBAd1B52c25750b1aCE",
+    "oracle": "coingecko",
+    "oracleId": "burger-swap",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-cake-bnb",
+    "name": "PancakeSwap: CAKE-BNB LP",
+    "contract": "0x502AB55Cf22f38c4fd8663dEE041A96B72264c53",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-cake-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-busd-bnb",
+    "name": "PancakeSwap: BUSD-BNB LP",
+    "contract": "0x0c36Bee5cF5E5b1BE5371574cEBF9A5f01DE5Fc4",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-busd-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-usdt-busd",
+    "name": "PancakeSwap: USDT-BUSD LP",
+    "contract": "0x348039C69B5fD7b333CE0a17E8361E501D2e3fa8",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-usdt-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-btcb-bnb",
+    "name": "PancakeSwap: BTCB-BNB LP",
+    "contract": "0xd9542B833C6B0D9E4f882d2c4F01d5b5bd005Ac7",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-btcb-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-usdt-bnb",
+    "name": "PancakeSwap: USDT-BNB LP",
+    "contract": "0x72F758cb79cA71CE9010dc9c0fA0155431435B72",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-usdt-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-link-bnb",
+    "name": "PancakeSwap: LINK-BNB LP",
+    "contract": "0xaB9C4a0fD179315b005a5f6D3793cb30Af718152",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-link-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-eth-bnb",
+    "name": "Pancake: ETH-BNB LP",
+    "contract": "0x1CfEAef83Bb688Ac5926df1feEB8F05244054C07",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-eth-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-smart",
+    "name": "Pancake: CAKE SMART",
+    "contract": "0xB0BDBB9E507dBF55f4aC1ef6ADa3E216202e06FD",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "bakery-bake",
+    "name": "Bakery: BAKE",
+    "contract": "0xaC112E7744C129ae54E65F5D2cb4eA472E08eA0B",
+    "oracle": "pancake",
+    "oracleId": "BAKE",
+    "tvl": 0
+  },
+
+  {
+    "id": "bakery-bake-bnb",
+    "name": "Bakery: BAKE-BNB BLP",
+    "contract": "0x3e1B60EB79b17d41F8E268936d853A43BEA24259",
+    "oracle": "bakery-lp",
+    "oracleId": "bakery-bake-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "bakery-bake-busd",
+    "name": "Bakery: BAKE-BUSD BLP",
+    "contract": "0x23293B8A7c65aF396Bda8Ff75E02c62f6db8f202",
+    "oracle": "bakery-lp",
+    "oracleId": "bakery-bake-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-alpha-bnb",
+    "name": "Pancake: ALPHA-BNB LP",
+    "contract": "0xB1B91AA761F552FEF29A50643D0F93690082960F",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-alpha-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-inj-bnb",
+    "name": "Pancake: INJ-BNB LP",
+    "contract": "0xD16Aef70403f1Fbf710C6A73EBb7c4FaA983d59a",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-inj-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-twt-bnb",
+    "name": "Pancake: TWT-BNB LP",
+    "contract": "0x3b2c93f9455786e74C68648EaaB09B20ce557537",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-twt-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-xvs-bnb",
+    "name": "Pancake: XVS-BNB LP",
+    "contract": "0xbB63c8858b64a856d79A80575Df60867622E4782",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-xvs-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "narwhal-gold-bnb",
+    "name": "Narwhal: GOLD-BNB NLP",
+    "contract": "0x179701FD814F17838605c1990EDA96C1EbeC984e",
+    "oracle": "narwhal-lp",
+    "oracleId": "narwhal-gold-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "narwhal-thugs-nar",
+    "name": "Narwhal: THUGS-NAR NLP",
+    "contract": "0xCa6e313C535B6C355bEeAae296B58a194C3D6044",
+    "oracle": "narwhal-lp",
+    "oracleId": "narwhal-thugs-nar",
+    "tvl": 0
+  }
+
+]
