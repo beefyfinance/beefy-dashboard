@@ -9,6 +9,7 @@ import addr from '../../data/addresses';
 
 import { fetchPrice } from '../../utils/fetchPrice';
 import getRewardsReceived from '../../utils/getRewardsReceived';
+import { getDailyEarnings } from '../../utils/getDailyEarnings';
 import { formatTvl } from '../../utils/format';
 
 export const VaultsContext = createContext(null);
@@ -79,12 +80,18 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
   setMarketCap(mcap);
 };
 
+const fetchDailyEarnings = async ({setDailyEarnings}) => {
+  let earnings = await getDailyEarnings() || 0;
+  setDailyEarnings(earnings.toFixed(2));
+ };
+
 // const fetchCowllectorBalance = async ({ provider, setCowllectorBalance }) => {
 // 	const balance = await provider.getBalance(addr.Cowllector);
 // 	setCowllectorBalance(Number(utils.formatEther(balance)).toFixed(2));
 // };
 
 const ContextProvider = ({ children }) => {
+  const [ vaultCount, setVaultCount ] = useState(0);
   const [ globalTvl, setGlobalTvl ] = useState(BigNumber.from(0));
   const [ treasury, setTreasury ] = useState({ BIFI: 0, WBNB: 0 });
   const [ unclaimedRewards, setUnclaimedRewards ] = useState(0);
@@ -92,19 +99,22 @@ const ContextProvider = ({ children }) => {
   const [ stakedBifi, setStakedBifi ] = useState(0);
   const [ bifiPrice, setBifiPrice ] = useState(0);
   const [ marketCap, setMarketCap ] = useState(0);
+  const [ dailyEarnings, setDailyEarnings ] = useState(0);
   // const [ cowllectorBalance, setCowllectorBalance ] = useState(0);
 
-  useEffect(() => {
+  useEffect(() => { 
     // FIXME: is there a safer way to fetch the provider?
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
+    setVaultCount(vaults.length);
     fetchGlobalTvl({ signer, setGlobalTvl });
     fetchTreasuryBalance({ signer, setTreasury });
     fetchUnclaimedRewards({ signer, setUnclaimedRewards });
     fetchRewardsReceived({ setTotalRewards });
     fetchStakedBifi({ provider, signer, setStakedBifi });
     fetchBifiPrice({ setBifiPrice, setMarketCap });
+    fetchDailyEarnings({ setDailyEarnings });
     // fetchCowllectorBalance({ provider, setCowllectorBalance });
   }, []);
 
@@ -112,13 +122,16 @@ const ContextProvider = ({ children }) => {
     <VaultsContext.Provider
       value={{
         vaults,
+        vaultCount,
         globalTvl,
         treasury,
         unclaimedRewards,
         totalRewards,
+        dailyEarnings,
         stakedBifi,
         bifiPrice,
-        marketCap
+        marketCap,
+
         // cowllectorBalance,
       }}
     >
