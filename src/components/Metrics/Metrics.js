@@ -20,6 +20,11 @@ export default function NavBar() {
 				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
 			/>
 			<GenericMetric
+				name="Daily Rewards (WBNB)"
+				metric="dailyRewards"
+				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
+			/>
+			<GenericMetric
 				name="% BIFI Staked"
 				metric="stakedBifi"
 				link="https://bscscan.com/token/0xCa3F508B8e4Dd382eE878A314789373D80A5190A?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#writeContract"
