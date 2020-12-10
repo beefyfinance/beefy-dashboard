@@ -81,10 +81,7 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
 };
 
 const fetchDailyEarnings = async ({setDailyEarnings}) => {
-  let earnings = await getDailyEarnings();
-  if (!earnings) {
-    earnings = 0
-  }
+  let earnings = await getDailyEarnings() || 0;
   setDailyEarnings(earnings.toFixed(2));
  };
 
@@ -94,6 +91,7 @@ const fetchDailyEarnings = async ({setDailyEarnings}) => {
 // };
 
 const ContextProvider = ({ children }) => {
+  const [ vaultCount, setVaultCount ] = useState(0);
   const [ globalTvl, setGlobalTvl ] = useState(BigNumber.from(0));
   const [ treasury, setTreasury ] = useState({ BIFI: 0, WBNB: 0 });
   const [ unclaimedRewards, setUnclaimedRewards ] = useState(0);
@@ -109,6 +107,7 @@ const ContextProvider = ({ children }) => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
+    setVaultCount(vaults.length);
     fetchGlobalTvl({ signer, setGlobalTvl });
     fetchTreasuryBalance({ signer, setTreasury });
     fetchUnclaimedRewards({ signer, setUnclaimedRewards });
@@ -123,6 +122,7 @@ const ContextProvider = ({ children }) => {
     <VaultsContext.Provider
       value={{
         vaults,
+        vaultCount,
         globalTvl,
         treasury,
         unclaimedRewards,
