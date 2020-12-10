@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const dailyEarningsEndpoint = "http://localhost:5000/earnings"
+const dailyEarningsEndpoint = "https://api.beefy.finance/earnings"
 
 const getDailyEarnings = async () => {
   try {

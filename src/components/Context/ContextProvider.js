@@ -81,8 +81,11 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
 };
 
 const fetchDailyEarnings = async ({setDailyEarnings}) => {
-  const earnings = await getDailyEarnings();
-  setDailyEarnings(earnings);
+  let earnings = await getDailyEarnings();
+  if (!earnings) {
+    earnings = 0
+  }
+  setDailyEarnings(earnings.toFixed(2));
  };
 
 // const fetchCowllectorBalance = async ({ provider, setCowllectorBalance }) => {
