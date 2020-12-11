@@ -34,6 +34,10 @@ export default function NavBar() {
 				metric="stakedBifi"
 				link="https://bscscan.com/token/0xCa3F508B8e4Dd382eE878A314789373D80A5190A?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#writeContract"
 			/>
+			<GenericMetric
+				name="BIFI Holders"
+				metric="bifiHolders"
+			/>
 			<TreasuryMetric
 				token="BIFI"
 				link="https://bscscan.com/token/0xca3f508b8e4dd382ee878a314789373d80a5190a?a=0x4a32de8c248533c28904b24b4cfcfe18e9f2ad01"
