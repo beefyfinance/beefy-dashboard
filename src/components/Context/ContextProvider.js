@@ -9,6 +9,7 @@ import addr from '../../data/addresses';
 
 import { fetchPrice } from '../../utils/fetchPrice';
 import getRewardsReceived from '../../utils/getRewardsReceived';
+import { getHolders } from '../../utils/getHolders';
 import { getDailyEarnings } from '../../utils/getDailyEarnings';
 import { formatTvl } from '../../utils/format';
 
@@ -73,6 +74,11 @@ const fetchStakedBifi = async ({ provider, signer, setStakedBifi }) => {
   setStakedBifi(`${percentage.toFixed(2)} %`);
 };
 
+const fetchBifiHolders = async({ setBifiHolders }) => {
+  const holders = await getHolders() || 0;
+  setBifiHolders(holders);
+};
+
 const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
   const price = await fetchPrice({ oracle: 'thugs', id: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A' });
   const mcap = formatTvl((80000 - 6000) * price);
@@ -97,6 +103,7 @@ const ContextProvider = ({ children }) => {
   const [ unclaimedRewards, setUnclaimedRewards ] = useState(0);
   const [ totalRewards, setTotalRewards ] = useState('loading...');
   const [ stakedBifi, setStakedBifi ] = useState(0);
+  const [ bifiHolders, setBifiHolders ] = useState(0);
   const [ bifiPrice, setBifiPrice ] = useState(0);
   const [ marketCap, setMarketCap ] = useState(0);
   const [ dailyEarnings, setDailyEarnings ] = useState(0);
@@ -113,6 +120,7 @@ const ContextProvider = ({ children }) => {
     fetchUnclaimedRewards({ signer, setUnclaimedRewards });
     fetchRewardsReceived({ setTotalRewards });
     fetchStakedBifi({ provider, signer, setStakedBifi });
+    fetchBifiHolders({ setBifiHolders });
     fetchBifiPrice({ setBifiPrice, setMarketCap });
     fetchDailyEarnings({ setDailyEarnings });
     // fetchCowllectorBalance({ provider, setCowllectorBalance });
@@ -129,6 +137,7 @@ const ContextProvider = ({ children }) => {
         totalRewards,
         dailyEarnings,
         stakedBifi,
+        bifiHolders,
         bifiPrice,
         marketCap,
 
