@@ -8,6 +8,14 @@
 		"tvl": 0
 	},
 	{
+		"id": "venus-bnb",
+		"name": "BNB",
+		"contract": "0x6BE4741AB0aD233e4315a10bc783a7B923386b71",
+		"oracle": "pancake",
+		"oracleId": "BNB",
+		"tvl": 0
+	},
+	{
 		"id": "venus-sxp",
 		"name": "SXP",
 		"contract": "0x9aaD247bAc2AFc3027256aD0Cc09A27551069bd6",
