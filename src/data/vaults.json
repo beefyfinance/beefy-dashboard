@@ -12,7 +12,7 @@
 		"name": "BNB",
 		"contract": "0x6BE4741AB0aD233e4315a10bc783a7B923386b71",
 		"oracle": "pancake",
-		"oracleId": "BNB",
+		"oracleId": "WBNB",
 		"tvl": 0
 	},
 	{
