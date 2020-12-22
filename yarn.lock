@@ -1125,7 +1125,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bandprotocol/bandchain.js@^1.1.5":
+"@bandprotocol/bandchain.js@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@bandprotocol/bandchain.js/-/bandchain.js-1.2.0.tgz#ac9d3d6c19616cbb9b460bc759e9af6a449d2dcc"
   integrity sha512-TZjn3XyyXkmBt8tV1/Mh6FEb9Vv7h+71L18erBcRVScjW/VONmJzw6Np7PlwCg0nx3yKyufNMQYj35+Es/WQ2w==
