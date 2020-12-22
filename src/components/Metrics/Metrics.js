@@ -15,18 +15,13 @@ export default function NavBar() {
 				link="https://app.beefy.finance/"
 			/>
 			<GenericMetric
-				name="Total Rewards (WBNB)"
-				metric="totalRewards"
-				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
-			/>
-			<GenericMetric
-				name="Unclaimed Rewards (WBNB)"
-				metric="unclaimedRewards"
-				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
-			/>
-			<GenericMetric
 				name="Daily Rewards (WBNB)"
 				metric="dailyEarnings"
+				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
+			/>
+			<GenericMetric
+				name="Total Rewards (WBNB)"
+				metric="totalEarnings"
 				link="https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
 			/>
 			<GenericMetric
@@ -56,11 +51,6 @@ export default function NavBar() {
 				metric="marketCap"
 				link="https://streetswap.vip/#/swap?outputCurrency=0xca3f508b8e4dd382ee878a314789373d80a5190a"
 			/>
-			{/* <GenericMetric
-				name="Cowllector (BNB)"
-				metric="cowllectorBalance"
-				link="https://bscscan.com/address/0xd529b1894491a0a26B18939274ae8ede93E81dbA"
-			/> */}
 		</Metrics>
 	);
 }
