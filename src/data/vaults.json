@@ -8,6 +8,69 @@
 		"tvl": 0
   },
 
+	{
+		"id": "street-twt-bnb",
+		"name": "StreetSwap: TWT-BNB TLP",
+		"contract": "0x23f81b26e7dfB44832f627Ee533399285a11e711",
+		"oracle": "thugs-lp",
+		"oracleId": "street-twt-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-sxp-bnb",
+		"name": "StreetSwap: SXP-BNB TLP",
+		"contract": "0x0F5ef847595236Bb70833825FC9Bf0ef982CDD4C",
+		"oracle": "thugs-lp",
+		"oracleId": "street-sxp-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-xvs-bnb",
+		"name": "StreetSwap: XVS-BNB TLP",
+		"contract": "0x7ca3761D9886D5Ac233E58d5B2E60174B3A94b82",
+		"oracle": "thugs-lp",
+		"oracleId": "street-xvs-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-inj-bnb",
+		"name": "StreetSwap: INJ-BNB TLP",
+		"contract": "0xFfEf22C020486a4118d4274a6D0573a80276d4b4",
+		"oracle": "thugs-lp",
+		"oracleId": "street-inj-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-unfi-bnb",
+		"name": "StreetSwap: UNFI-BNB TLP",
+		"contract": "0x8F61350871B986B098A6757e3953CEF697D46025",
+		"oracle": "thugs-lp",
+		"oracleId": "street-unfi-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-ltc-bnb",
+		"name": "StreetSwap: LTC-BNB TLP",
+		"contract": "0x40BBdaD2e12A3E9900F2e6e6A5B605c36182BEa0",
+		"oracle": "thugs-lp",
+		"oracleId": "street-ltc-bnb",
+		"tvl": 0
+	},
+	
+	{
+		"id": "street-alpha-bnb",
+		"name": "StreetSwap: ALPHA-BNB TLP",
+		"contract": "0x1061c2962fccD794C4131b3c13058302618329E9",
+		"oracle": "thugs-lp",
+		"oracleId": "street-alpha-bnb",
+		"tvl": 0
+  },
+
   {
 		"id": "cake-yfii-bnb",
 		"name": "PancakeSwap: YFII-BNB LP",
