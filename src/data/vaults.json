@@ -10,8 +10,8 @@
 
   {
     "id": "jetfuel-fuel-bnb-pcs",
-    "name": "Jetfuel: FUEL-BNB LP pcs",
-    "contract": "0xD3b66943227880A820e6A691bCF99268ac8F2669",
+    "name": "Jetfuel: FUEL-BNB LP",
+    "contract": "0x9d3Aa54172D49659Ee9948d1b7D602989d39Ffa6",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-fuel-bnb-pcs",
     "tvl": 0
@@ -19,8 +19,8 @@
 
   {
     "id": "jetfuel-fuel-bnb-ss",
-    "name": "Jetfuel: FUEL-BNB LP ss",
-    "contract": "0x24205Ef0745171c8c3f31Dd0330f05149a369dB2",
+    "name": "Jetfuel: FUEL-BNB TLP",
+    "contract": "0xda643fBC5faA4FB3a95c62dBF729fE2B0Ff4F577",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-fuel-bnb-ss",
     "tvl": 0
@@ -29,7 +29,7 @@
   {
     "id": "jetfuel-bhc-bnb",
     "name": "Jetfuel: BHC-BNB LP",
-    "contract": "0xccadAaBa83Fc2B11a10dc53b0efBCA0909812edd",
+    "contract": "0xfb62a8d9d162632C5AaD94f6bf353a19AeCd2855",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-bhc-bnb",
     "tvl": 0
@@ -38,7 +38,7 @@
   {
     "id": "jetfuel-eth-bnb",
     "name": "Jetfuel: ETH-BNB LP",
-    "contract": "0xfeEa248a0523b058818DE5b033fd70eBeBC7F54b",
+    "contract": "0x25Fb99cf1DCe844cD823bD1e8FB0c1DCc85dAD0E",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-eth-bnb",
     "tvl": 0
@@ -47,7 +47,7 @@
   {
     "id": "jetfuel-cake-bnb",
     "name": "Jetfuel: CAKE-BNB LP",
-    "contract": "0xb713d5B6982344D7EA2EEd7E0cc3EACc8dbfA7a0",
+    "contract": "0xC0766D0F482c7174274bE653dcB0B80c0436dFCc",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-cake-bnb",
     "tvl": 0
@@ -56,7 +56,7 @@
   {
     "id": "jetfuel-uni-bnb",
     "name": "Jetfuel: UNI-BNB LP",
-    "contract": "0xFf3216f1983C7eC487a1F35fAC75DB7A45C1791c",
+    "contract": "0xD96c8527d20acfa7D5D2054Bfb375fd0cB428322",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-uni-bnb",
     "tvl": 0
@@ -65,7 +65,7 @@
   {
     "id": "jetfuel-link-bnb",
     "name": "Jetfuel: LINK-BNB LP",
-    "contract": "0x6325B81Ee6e29bb9354BcdDd08aeCaF7D069D9A7",
+    "contract": "0x73fA0bbAb2e3288123674200553fBfCb94037Fcb",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-link-bnb",
     "tvl": 0
@@ -74,7 +74,7 @@
   {
     "id": "jetfuel-busd-bnb",
     "name": "Jetfuel: BUSD-BNB LP",
-    "contract": "0xBf97eC5b7Ce678272C31ca8a73591774b410bB91",
+    "contract": "0x8af2D7289A093CF1019D9e20554F6c7aD5791A94",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-busd-bnb",
     "tvl": 0
@@ -83,7 +83,7 @@
   {
     "id": "jetfuel-usdt-bnb",
     "name": "Jetfuel: USDT-BNB LP",
-    "contract": "0x721c0Ec837831f1312616172874C9c622d3729DB",
+    "contract": "0x629C4ca0F3492476FAe31dE6FD456D7da1dfCEb7",
     "oracle": "jetfuel-lp",
     "oracleId": "jetfuel-usdt-bnb",
     "tvl": 0
