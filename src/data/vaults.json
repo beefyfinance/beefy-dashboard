@@ -6,7 +6,115 @@
 		"oracle": "thugs",
 		"oracleId": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
 		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-fuel-bnb-pcs",
+		"name": "Jetfuel: FUEL-BNB LP pcs",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-fuel-bnb-pcs",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-fuel-bnb-ss",
+		"name": "Jetfuel: FUEL-BNB LP ss",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-fuel-bnb-ss",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-bhc-bnb",
+		"name": "Jetfuel: BHC-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-bhc-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-eth-bnb",
+		"name": "Jetfuel: ETH-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-eth-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-cake-bnb",
+		"name": "Jetfuel: CAKE-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-cake-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-uni-bnb",
+		"name": "Jetfuel: UNI-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-uni-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-link-bnb",
+		"name": "Jetfuel: LINK-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-link-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-busd-bnb",
+		"name": "Jetfuel: BUSD-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-busd-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "jetfuel-usdt-bnb",
+		"name": "Jetfuel: USDT-BNB LP",
+		"contract": "0x0000000000000000000000000000000000000000",
+		"oracle": "jetfuel-lp",
+		"oracleId": "jetfuel-usdt-bnb",
+		"tvl": 0
+	},
+
+	{
+		"id": "venus-bch",
+		"name": "Venus: BCH",
+		"contract": "0xf19878DE084C3c9753bB0DAD8aC5b9070fb7813c",
+		"oracle": "pancake",
+		"oracleId": "BCH",
+		"tvl": 0
   },
+	
+	{
+		"id": "venus-dot",
+		"name": "Venus: DOT",
+		"contract": "0x2211191ff72505ED54Aa6aD3F6Fcc72c87CAb338",
+		"oracle": "pancake",
+		"oracleId": "DOT",
+		"tvl": 0
+	},
+
+	{
+		"id": "venus-link",
+		"name": "Venus: LINK",
+		"contract": "0x8da7167860EDfc2bFfd790f217AB5e398803Bbc8",
+		"oracle": "pancake",
+		"oracleId": "LINK",
+		"tvl": 0
+	},
 
 	{
 		"id": "street-twt-bnb",
