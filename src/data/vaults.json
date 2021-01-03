@@ -9,6 +9,24 @@
   },
 
   {
+    "id": "thugs-drugs-bhc",
+    "name": "DRUGS BHC",
+    "contract": "0xE7408598DB157Cd4A24Bc26B579910AF36a72fad",
+    "oracle": "thugs",
+    "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "tvl": 0
+  },
+
+  {
+    "id": "thugs-drugs-jgn",
+    "name": "DRUGS JGN",
+    "contract": "0x40e39743dBcb30c7Fc4152F57F29Cd22D9fc7932",
+    "oracle": "thugs",
+    "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "tvl": 0
+  },
+
+  {
     "id": "jetfuel-fuel-bnb-pcs",
     "name": "Jetfuel: FUEL-BNB LP",
     "contract": "0x9d3Aa54172D49659Ee9948d1b7D602989d39Ffa6",
@@ -448,7 +466,7 @@
 
   {
     "id": "street-eos-bnb",
-    "name": "EOS-BNB LP",
+    "name": "EOS-BNB TLP",
     "contract": "0xd4572009c7580DEfa0251FFD811b04386Dd41570",
     "oracle": "thugs-lp",
     "oracleId": "street-eos-bnb",

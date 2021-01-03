@@ -40,7 +40,7 @@ const getRewardsReceived = async () => {
 
 	const start = Number(rewardPoolCreationBlock);
 	const end = await web3.eth.getBlockNumber();
-	const step = 24 * 60 * 60 / 3;
+	const step = 24 * 60 * 60 / 30;
 	const steps = Math.trunc((end - start) / step);
 	
 	let from, to;
