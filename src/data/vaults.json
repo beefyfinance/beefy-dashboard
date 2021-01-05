@@ -9,6 +9,64 @@
   },
 
   {
+    "id": "street-bhc-bnb",
+    "name": "StreetSwap: BHC-BNB TLP",
+    "contract": "0x7EED74dacB305C03A8f624282d6AEF15f1CD3777",
+    "oracle": "thugs-lp",
+    "oracleId": "street-bhc-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-jgn-bnb",
+    "name": "StreetSwap: JGN-BNB TLP",
+    "contract": "0x34199dc9ad1bD3D4A6EC70c120B8780e3A2Ca6C7",
+    "oracle": "thugs-lp",
+    "oracleId": "street-jgn-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-unfi-bnb",
+    "name": "PancakeSwap: UNFI-BNB LP",
+    "contract": "0x03090F5E40934E0F1AAe73b2F1cFD240DBD7Af5E",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-unfi-bnb",
+    "tvl": 0
+  },
+  {
+    "id": "cake-reef-bnb",
+    "name": "PancakeSwap: REEF-BNB LP",
+    "contract": "0x6E0F2e199FC10B3F354C6825fCbC24a5de96B4bF",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-reef-bnb",
+    "tvl": 0
+  },
+  {
+    "id": "cake-stax-cake",
+    "name": "PancakeSwap: STAX-CAKE LP",
+    "contract": "0xB194bcA26660abC93042fd6b475F2dD0b5175ED7",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-stax-cake",
+    "tvl": 0
+  },
+  {
+    "id": "cake-nar-cake",
+    "name": "PancakeSwap: NAR-CAKE LP",
+    "contract": "0xFaa95d27A91eb2305bD1B4b12a9cE564874eE349",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-nar-cake",
+    "tvl": 0
+  },
+  {
+    "id": "cake-nya-cake",
+    "name": "PancakeSwap: NYA-CAKE LP",
+    "contract": "0x5f640a217026FeFD0C4F1E581b44794c3d5F4638",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-nya-cake",
+    "tvl": 0
+  },
+  {
     "id": "thugs-drugs-bhc",
     "name": "DRUGS BHC",
     "contract": "0xE7408598DB157Cd4A24Bc26B579910AF36a72fad",
@@ -115,7 +173,7 @@
     "oracleId": "BCH",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-dot",
     "name": "Venus: DOT",
@@ -142,7 +200,7 @@
     "oracleId": "street-twt-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-sxp-bnb",
     "name": "StreetSwap: SXP-BNB TLP",
@@ -151,7 +209,7 @@
     "oracleId": "street-sxp-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-xvs-bnb",
     "name": "StreetSwap: XVS-BNB TLP",
@@ -160,7 +218,7 @@
     "oracleId": "street-xvs-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-inj-bnb",
     "name": "StreetSwap: INJ-BNB TLP",
@@ -169,7 +227,7 @@
     "oracleId": "street-inj-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-unfi-bnb",
     "name": "StreetSwap: UNFI-BNB TLP",
@@ -178,7 +236,7 @@
     "oracleId": "street-unfi-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-ltc-bnb",
     "name": "StreetSwap: LTC-BNB TLP",
@@ -187,7 +245,7 @@
     "oracleId": "street-ltc-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "street-alpha-bnb",
     "name": "StreetSwap: ALPHA-BNB TLP",
@@ -241,7 +299,7 @@
     "oracleId": "cake-atom-bnb",
     "tvl": 0
   },
-  
+
   {
     "id": "cake-vai-busd",
     "name": "PancakeSwap: VAI-BUSD LP",
@@ -259,7 +317,7 @@
     "oracleId": "cake-broobee-cake",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-bnb",
     "name": "Venus: BNB",
@@ -268,7 +326,7 @@
     "oracleId": "WBNB",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-sxp",
     "name": "Venus: SXP",
@@ -277,7 +335,7 @@
     "oracleId": "SXP",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-usdc",
     "name": "Venus: USDC",
@@ -295,7 +353,7 @@
     "oracleId": "USDT",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-busd",
     "name": "Venus: BUSD",
@@ -304,7 +362,7 @@
     "oracleId": "BUSD",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-btcb",
     "name": "Venus: BTCB",
@@ -313,7 +371,7 @@
     "oracleId": "BTCB",
     "tvl": 0
   },
-  
+
   {
     "id": "venus-eth",
     "name": "Venus: ETH",
