@@ -9,6 +9,24 @@
   },
 
   {
+    "id": "cake-bdo-bnb",
+    "name": "PancakeSwap: BDO-BNB LP",
+    "contract": "0x2B19461954cCBa9e1b60bD0bC6453FeaC8aa1a17",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-bdo-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-bscx-bnb",
+    "name": "PancakeSwap: BSCX-BNB LP",
+    "contract": "0xB5F0fF997BEc850b11792ed07b2B5AbDEa869B84",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-bscx-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "street-bhc-bnb",
     "name": "StreetSwap: BHC-BNB TLP",
     "contract": "0x7EED74dacB305C03A8f624282d6AEF15f1CD3777",
