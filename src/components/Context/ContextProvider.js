@@ -59,7 +59,7 @@ const fetchTreasuryBalance = async ({ signer, setTreasury }) => {
 const fetchStakedBifi = async ({ provider, signer, setStakedBifi }) => {
   const values = await fetchBalance({ token: addr.BIFI, address: addr.RewardPool, signer });
   const stakedBifi = Number(utils.formatEther(values));
-  const percentage = stakedBifi / (80000 - 6000) * 100;
+  const percentage = stakedBifi / (80000 - 4000) * 100;
   setStakedBifi(`${percentage.toFixed(2)} %`);
 };
 
@@ -70,7 +70,7 @@ const fetchBifiHolders = async({ setBifiHolders }) => {
 
 const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
   const price = await fetchPrice({ oracle: 'thugs', id: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A' });
-  const mcap = formatTvl((80000 - 6000) * price);
+  const mcap = formatTvl((80000 - 4000) * price);
   setBifiPrice(`$${price.toFixed(2)}`);
   setMarketCap(mcap);
 };

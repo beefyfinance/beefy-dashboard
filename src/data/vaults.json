@@ -532,15 +532,6 @@
   },
 
   {
-    "id": "street-bhc-bnb",
-    "name": "BHC-BNB TLP",
-    "contract": "0x5417f74221abD485C34429eb90EBA100FAC9A6e1",
-    "oracle": "thugs-lp",
-    "oracleId": "street-bhc-bnb",
-    "tvl": 0
-  },
-
-  {
     "id": "street-bch-bnb",
     "name": "BCH-BNB TLP",
     "contract": "0x1bcc82ce9b387E16fC383af563fd400074E3f060",
