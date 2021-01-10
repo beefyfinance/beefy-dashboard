@@ -27,6 +27,15 @@
   },
 
   {
+    "id": "bakery-btc-bnb",
+    "name": "BakerySwap: BTC-BNB BLP",
+    "contract": "0xeD4ea30c755676C07d3e0e0f74Ff84C0193B4551",
+    "oracle": "bakery-lp",
+    "oracleId": "bakery-btc-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "street-bhc-bnb",
     "name": "StreetSwap: BHC-BNB TLP",
     "contract": "0x7EED74dacB305C03A8f624282d6AEF15f1CD3777",
