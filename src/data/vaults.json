@@ -12,7 +12,7 @@
     "id": "cake-bdo-bnb",
     "name": "PancakeSwap: BDO-BNB LP",
     "contract": "0x2B19461954cCBa9e1b60bD0bC6453FeaC8aa1a17",
-    "oracle": "pancake-lp",
+    "oracle": "bdollar-lp",
     "oracleId": "cake-bdo-bnb",
     "tvl": 0
   },
