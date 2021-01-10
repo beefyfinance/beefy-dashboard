@@ -631,24 +631,6 @@
   },
 
   {
-    "id": "fortube-atom",
-    "name": "ForTube: ATOM",
-    "contract": "0x6c98707D6F3e0909E377A0Db7ef7895098076ec3",
-    "oracle": "coingecko",
-    "oracleId": "cosmos",
-    "tvl": 0
-  },
-
-  {
-    "id": "fortube-xtz",
-    "name": "ForTube: XTZ",
-    "contract": "0x4480A061130c56b58E8Fa9adeC5BBbB9609122dB",
-    "oracle": "coingecko",
-    "oracleId": "tezos",
-    "tvl": 0
-  },
-
-  {
     "id": "fortube-busd",
     "name": "ForTube: BUSD",
     "contract": "0xD6fca61Edb1cD0259320A6E0899E8aD1044BBCda",
@@ -681,15 +663,6 @@
     "contract": "0xc16187F3eb15aEE949e7d784906d53fd7E364B26",
     "oracle": "coingecko",
     "oracleId": "tether",
-    "tvl": 0
-  },
-
-  {
-    "id": "fortube-eth",
-    "name": "ForTube: ETH",
-    "contract": "0xc87049670329a82724e7135A26c73c3496a1Db23",
-    "oracle": "coingecko",
-    "oracleId": "ethereum",
     "tvl": 0
   },
 
