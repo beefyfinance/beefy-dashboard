@@ -9,6 +9,42 @@
   },
 
   {
+    "id": "venus-dai",
+    "name": "Venus: DAI",
+    "contract": "0x813aDbc7b9a9822FA37510F52aD14bDBc45aA306",
+    "oracle": "pancake",
+    "oracleId": "DAI",
+    "tvl": 0
+  },
+
+  {
+    "id": "venus-fil",
+    "name": "Venus: FIL",
+    "contract": "0x8B80E58328aEF3796D70D29F65d516d29ACD944d",
+    "oracle": "pancake",
+    "oracleId": "FIL",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-ten-bnb",
+    "name": "PancakeSwap: TEN-BNB LP",
+    "contract": "0x3040387C46e21B453e4a8f648528368b9066628B",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-ten-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-balbt-bnb",
+    "name": "PancakeSwap: bALBT-BNB LP",
+    "contract": "0xc2c792807A32fB9F9f985749Ef90673D8e1Bad44",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-balbt-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "cake-bdo-bnb",
     "name": "PancakeSwap: BDO-BNB LP",
     "contract": "0x2B19461954cCBa9e1b60bD0bC6453FeaC8aa1a17",
@@ -85,6 +121,7 @@
     "oracleId": "cake-nar-cake",
     "tvl": 0
   },
+
   {
     "id": "cake-nya-cake",
     "name": "PancakeSwap: NYA-CAKE LP",
@@ -93,6 +130,7 @@
     "oracleId": "cake-nya-cake",
     "tvl": 0
   },
+
   {
     "id": "thugs-drugs-bhc",
     "name": "DRUGS BHC",
