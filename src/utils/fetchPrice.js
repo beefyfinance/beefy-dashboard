@@ -3,6 +3,7 @@ import { Client } from '@bandprotocol/bandchain.js';
 
 const endpoints = {
   bandchain: 'https://poa-api.bandchain.org',
+  bakery:    'https://api.beefy.finance/bakery/price',
   bakeryLp:  'https://api.beefy.finance/bakery/lps',
   bdollarLp: 'https://api.beefy.finance/bdollar/lps',
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
@@ -121,6 +122,10 @@ export const fetchPrice = async ({ oracle, id }) => {
   switch (oracle) {
     case 'band':
       price = await fetchBand(id);
+      break;
+    
+    case 'bakery':
+      price = await fetchLP(id, endpoints.bakery);
       break;
 
     case 'bakery-lp':
