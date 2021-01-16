@@ -9,8 +9,17 @@
   },
 
   {
+    "id": "cake-bdo-bnb-sbdo",
+    "name": "bDollar: BDO-BNB LP (SBDO)",
+    "contract": "0x9355af5ABD030E8BC2Dc63a38F1C956F1e150308",
+    "oracle": "bdollar-lp",
+    "oracleId": "cake-bdo-bnb-sbdo",
+    "tvl": 0
+  },
+
+  {
     "id": "cake-sbdo-busd",
-    "name": "PancakeSwap: SBDO-BUSD LP",
+    "name": "bDollar: SBDO-BUSD LP",
     "contract": "0x9327029cf20B78e445397dAf0c4e9c19a931D62e",
     "oracle": "bdollar-lp",
     "oracleId": "cake-sbdo-busd",
@@ -23,24 +32,6 @@
     "contract": "0x0fA31301EaA9633b3e4F7dF22F7543115759cf5a",
     "oracle": "bdollar-lp",
     "oracleId": "cake-bdo-busd",
-    "tvl": 0
-  },
-
-  {
-    "id": "cake-bdo-bfi",
-    "name": "PancakeSwap: BDO-BFI LP",
-    "contract": "0x0Aff0c8F7d7b0d073E78Ae7B36edC4D7985AB010",
-    "oracle": "bdollar-lp",
-    "oracleId": "cake-bdo-bfi",
-    "tvl": 0
-  },
-
-  {
-    "id": "cake-bdo-bnb",
-    "name": "PancakeSwap: BDO-BNB LP",
-    "contract": "0x2B19461954cCBa9e1b60bD0bC6453FeaC8aa1a17",
-    "oracle": "bdollar-lp",
-    "oracleId": "cake-bdo-bnb",
     "tvl": 0
   },
 
