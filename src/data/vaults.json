@@ -903,15 +903,6 @@
   },
 
   {
-    "id": "bakery-bake-busd",
-    "name": "Bakery: BAKE-BUSD BLP",
-    "contract": "0x23293B8A7c65aF396Bda8Ff75E02c62f6db8f202",
-    "oracle": "bakery-lp",
-    "oracleId": "bakery-bake-busd",
-    "tvl": 0
-  },
-
-  {
     "id": "cake-alpha-bnb",
     "name": "Pancake: ALPHA-BNB LP",
     "contract": "0xB1B91AA761F552FEF29A50643D0F93690082960F",
