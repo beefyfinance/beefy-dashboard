@@ -9,6 +9,51 @@
   },
 
   {
+    "id": "cake-ltc-bnb",
+    "name": "PancakeSwap: LTC-BNB LP",
+    "contract": "0x4D6294D36aD4201De1D93Af18A61453B8865d008",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-ltc-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-ada-bnb",
+    "name": "PancakeSwap: ADA-BNB LP",
+    "contract": "0x1d23ecC0645B07791b7D99349e253ECEbe43f614",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-ada-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-dot-bnb",
+    "name": "PancakeSwap: DOT-BNB LP",
+    "contract": "0xb8b7CAF72D75Ac8b71bB208b2D98a9dac9d5c90B",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-dot-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "bakery-bake-busd",
+    "name": "BakerySwap: BAKE-BUSD BLP",
+    "contract": "0x23293B8A7c65aF396Bda8Ff75E02c62f6db8f202",
+    "oracle": "bakery-lp",
+    "oracleId": "bakery-bake-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "jetfuel-vapor-bnb",
+    "name": "Jetfuel: VAPOR-BNB LP",
+    "contract": "0x00EcbB8f9853dbC621b39ab205a148A26eAC3B11",
+    "oracle": "jetfuel-lp",
+    "oracleId": "jetfuel-vapor-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "cake-bdo-bnb-sbdo",
     "name": "bDollar: BDO-BNB LP (SBDO)",
     "contract": "0x9355af5ABD030E8BC2Dc63a38F1C956F1e150308",
