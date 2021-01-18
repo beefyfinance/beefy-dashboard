@@ -9,6 +9,33 @@
   },
 
   {
+    "id": "thugs-drugs-btri",
+    "name": "Traphouse: DRUGS BTRI",
+    "contract": "0xFAE4a35305a1dcED8303029ac05e51386f667ED8",
+    "oracle": "thugs",
+    "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-btri-bnb",
+    "name": "Traphouse: bTRI-BNB TLP",
+    "contract": "0x589bf2811CC824C328B5FC38288f141cB0053fAd",
+    "oracle": "thugs-lp",
+    "oracleId": "street-btri-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "street-btri-cred",
+    "name": "Traphouse: bTRI-CRED TLP",
+    "contract": "0x370533CB4f8b3f018caE837a83960AEfCeB36f39",
+    "oracle": "thugs-lp",
+    "oracleId": "street-btri-cred",
+    "tvl": 0
+  },
+
+  {
     "id": "cake-ltc-bnb",
     "name": "PancakeSwap: LTC-BNB LP",
     "contract": "0x4D6294D36aD4201De1D93Af18A61453B8865d008",
