@@ -9,6 +9,42 @@
   },
 
   {
+    "id": "cake-mamzn-ust",
+    "name": "PancakeSwap: MAMZN UST",
+    "contract": "0x69009287479805E7372284835627564bad02107D",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-mamzn-ust",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-mgoogl-ust",
+    "name": "PancakeSwap: MGOOGL UST",
+    "contract": "0xfBa61aC24B46c5B7298De02FBa8F577C1c5005e9",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-mgoogl-ust",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-mnflx-ust",
+    "name": "PancakeSwap: MNFLX UST",
+    "contract": "0x7185017145ea364163cCd708E0c78AC0297D6A94",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-mnflx-ust",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-mtsla-ust",
+    "name": "PancakeSwap: MTSLA UST",
+    "contract": "0x42BeB2855aa620C5c9dD073FA888c43c8a65c34f",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-mtsla-ust",
+    "tvl": 0
+  },
+
+  {
     "id": "thugs-drugs-btri",
     "name": "Traphouse: DRUGS BTRI",
     "contract": "0xFAE4a35305a1dcED8303029ac05e51386f667ED8",
@@ -97,7 +133,7 @@
     "oracleId": "cake-sbdo-busd",
     "tvl": 0
   },
-  
+
   {
     "id": "cake-bdo-busd",
     "name": "PancakeSwap: BDO-BUSD LP",
