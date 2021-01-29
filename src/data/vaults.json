@@ -3,8 +3,8 @@
     "id": "bifi-maxi",
     "name": "BIFI Maxi",
     "contract": "0xf7069e41C57EcC5F122093811d8c75bdB5f7c14e",
-    "oracle": "thugs",
-    "oracleId": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+    "oracle": "pancake",
+    "oracleId": "BIFI",
     "tvl": 0
   },
 
