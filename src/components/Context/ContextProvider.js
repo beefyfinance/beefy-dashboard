@@ -69,7 +69,7 @@ const fetchBifiHolders = async({ setBifiHolders }) => {
 };
 
 const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
-  const price = await fetchPrice({ oracle: 'thugs', id: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c_0xCa3F508B8e4Dd382eE878A314789373D80A5190A' });
+  const price = await fetchPrice({ oracle: 'pancake', id: 'BIFI' });
   const mcap = formatTvl((80000 - 4000) * price);
   setBifiPrice(`$${price.toFixed(2)}`);
   setMarketCap(mcap);
