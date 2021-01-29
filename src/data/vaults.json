@@ -9,6 +9,33 @@
   },
 
   {
+    "id": "kebab-kebab",
+    "name": "Kebab: KEBAB",
+    "contract": "0xE2231D4ca4921Cb35680bac714C9d40C8d217494",
+    "oracle": "pancake",
+    "oracleId": "KEBAB",
+    "tvl": 0
+  },
+
+  {
+    "id": "kebab-kebab-busd",
+    "name": "Kebab: KEBAB-BUSD LP",
+    "contract": "0xF0A7626eCcBee00aF144BB1f77CD187AF85BBf41",
+    "oracle": "kebab-lp",
+    "oracleId": "kebab-kebab-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "kebab-kebab-bnb",
+    "name": "Kebab: KEBAB-BNB LP",
+    "contract": "0x2Eb92E2882030B8e153370d208462D4dDf7041d2",
+    "oracle": "kebab-lp",
+    "oracleId": "kebab-kebab-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "cake-mamzn-ust",
     "name": "PancakeSwap: MAMZN-UST LP",
     "contract": "0x69009287479805E7372284835627564bad02107D",

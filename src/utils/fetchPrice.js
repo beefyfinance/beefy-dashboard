@@ -2,17 +2,18 @@ import axios from 'axios';
 import { Client } from '@bandprotocol/bandchain.js';
 
 const endpoints = {
-  bandchain: 'https://poa-api.bandchain.org',
   bakery:    'https://api.beefy.finance/bakery/price',
   bakeryLp:  'https://api.beefy.finance/bakery/lps',
+  bandchain: 'https://poa-api.bandchain.org',
   bdollarLp: 'https://api.beefy.finance/bdollar/lps',
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
   jetfuelLp: 'https://api.beefy.finance/jetfuel/lps',
+  kebabLp:   'https://api.beefy.finance/kebab/lps',
   narwhalLp: 'https://api.beefy.finance/narwhal/lps',
   pancake:   'https://api.beefy.finance/pancake/price',
   pancakeLp: 'https://api.beefy.finance/pancake/lps',
-  thugsLp:   'https://api.beefy.finance/thugs/lps',
   thugs:     'https://api.beefy.finance/thugs/tickers',
+  thugsLp:   'https://api.beefy.finance/thugs/lps',
 };
 
 const CACHE_TIMEOUT = 30 * 60 * 1000;
@@ -142,6 +143,10 @@ export const fetchPrice = async ({ oracle, id }) => {
     
     case 'jetfuel-lp':
       price = await fetchLP(id, endpoints.jetfuelLp);
+      break;
+    
+    case 'kebab-lp':
+      price = await fetchLP(id, endpoints.kebabLp);
       break;
     
     case 'narwhal-lp':
