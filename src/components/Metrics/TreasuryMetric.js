@@ -5,7 +5,7 @@ import BaseMetric from './BaseMetric';
 
 function TreasuryMetric({ token, link }) {
 	const { treasury } = useContext(VaultsContext);
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 
 	return <BaseMetric name={t('Metric-Treasury', { token })} value={treasury[token]} link={link} />;
 }

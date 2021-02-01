@@ -9,7 +9,7 @@ import {
 } from './style';
 
 export default function NavBar() {
-    const { t } = useTranslation();
+	const { t } = useTranslation();
     return (
 		<Nav>
 			<NavSection>

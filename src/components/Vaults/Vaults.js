@@ -7,7 +7,7 @@ import { TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Contr
 
 export default function BasicTable() {
 	const { vaults } = useContext(VaultsContext);
-    const { t } = useTranslation();
+	const { t } = useTranslation();
     const sortedVaults = vaults.sort((a, b) =>  Number(b.tvl) - Number(a.tvl));
 
 	return (

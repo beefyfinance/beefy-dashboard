@@ -7,7 +7,7 @@ import TreasuryMetric from './TreasuryMetric';
 import GenericMetric from './GenericMetric';
 
 export default function NavBar() {
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<Metrics>
 			<GlobalTvlMetric link="https://app.beefy.finance/" />

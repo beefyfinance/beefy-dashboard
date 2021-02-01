@@ -7,7 +7,7 @@ import { formatTvl } from '../../utils/format';
 
 function GlobalTvlMetric({ link }) {
 	const { globalTvl } = useContext(VaultsContext);
-    const { t } = useTranslation();
+	const { t } = useTranslation();
 
 	return <BaseMetric name={t("Metric-VaultsTVL")} value={formatTvl(Number(globalTvl))} link={link} />;
 }
