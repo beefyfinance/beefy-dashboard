@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Nav,
 	NavSection,
@@ -8,6 +9,7 @@ import {
 } from './style';
 
 export default function NavBar() {
+    const { t } = useTranslation();
 	return (
 		<Nav>
 			<NavSection>
@@ -15,7 +17,7 @@ export default function NavBar() {
         <NavName href='https://dashboard.beefy.finance'>dashboard</NavName>
 			</NavSection>
 			<NavSection>
-				<NavBtn href='https://app.beefy.finance' target="_blank" rel="noreferrer">Launch App</NavBtn>
+				<NavBtn href='https://app.beefy.finance' target="_blank" rel="noreferrer">{t("LaunchApp")}</NavBtn>
 			</NavSection>
 		</Nav>
 	);
