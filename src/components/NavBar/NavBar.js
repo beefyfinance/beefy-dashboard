@@ -10,7 +10,7 @@ import {
 
 export default function NavBar() {
     const { t } = useTranslation();
-	return (
+    return (
 		<Nav>
 			<NavSection>
 				<NavLogo src='/img/beefy.svg' />

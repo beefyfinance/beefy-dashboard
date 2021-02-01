@@ -1,5 +1,6 @@
 {
   "LaunchApp": "Launch App",
+  "Metric-VaultsTVL": "Vaults TVL",
   "Metric-ActiveVaults": "Active Vaults",
   "Metric-DailyRewards": "Daily Rewards (WBNB)",
   "Metric-TotalRewards": "Total Rewards (WBNB)",
