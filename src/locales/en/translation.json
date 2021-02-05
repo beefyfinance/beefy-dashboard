@@ -1,0 +1,14 @@
+{
+  "LaunchApp": "Launch App",
+  "Metric-VaultsTVL": "Vaults TVL",
+  "Metric-ActiveVaults": "Active Vaults",
+  "Metric-DailyRewards": "Daily Rewards (WBNB)",
+  "Metric-TotalRewards": "Total Rewards (WBNB)",
+  "Metric-BIFIStaked": "% BIFI Staked",  
+  "Metric-BIFIHolders": "BIFI Holders",
+  "Metric-BIFIPrice": "BIFI Price",
+  "Metric-MarketCap": "Market Cap",
+  "Metric-Treasury": "Treasury ({{token}})",
+  "VaultsColumn-Vault": "Vault",
+  "VaultsColumn-Address": "Address"
+}

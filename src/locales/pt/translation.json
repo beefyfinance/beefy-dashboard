@@ -1,0 +1,14 @@
+{
+  "LaunchApp": "Iniciar App",
+  "Metric-VaultsTVL": "TVL dos Cofres",
+  "Metric-ActiveVaults": "Cofres Ativos",
+  "Metric-DailyRewards": "Prêmios/Dia (WBNB)",
+  "Metric-TotalRewards": "Total Prêmios (WBNB)",
+  "Metric-BIFIStaked": "% de BIFI Aplic.",  
+  "Metric-BIFIHolders": "Titulares de BIFI",
+  "Metric-BIFIPrice": "Preço do BIFI",
+  "Metric-MarketCap": "Cap de Mercado",
+  "Metric-Treasury": "Tesouro ({{token}})",
+  "VaultsColumn-Vault": "Cofre",
+  "VaultsColumn-Address": "Endereço"
+}
