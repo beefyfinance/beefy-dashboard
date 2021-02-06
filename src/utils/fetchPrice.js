@@ -9,6 +9,7 @@ const endpoints = {
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
   jetfuelLp: 'https://api.beefy.finance/jetfuel/lps',
   kebabLp:   'https://api.beefy.finance/kebab/lps',
+  monsterLP: 'https://api.beefy.finance/monster/lps',
   narwhalLp: 'https://api.beefy.finance/narwhal/lps',
   pancake:   'https://api.beefy.finance/pancake/price',
   pancakeLp: 'https://api.beefy.finance/pancake/lps',
@@ -147,6 +148,10 @@ export const fetchPrice = async ({ oracle, id }) => {
     
     case 'kebab-lp':
       price = await fetchLP(id, endpoints.kebabLp);
+      break;
+    
+    case 'monster-lp':
+      price = await fetchLP(id, endpoints.monsterLP);
       break;
     
     case 'narwhal-lp':

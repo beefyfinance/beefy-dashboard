@@ -9,6 +9,33 @@
   },
 
   {
+    "id": "monster-mss-busd",
+    "name": "MonsterSlayer: MSS-BUSD LP",
+    "contract": "0x3B6C7bC3BE5C60c875cF415A97e6539cC28ECa32",
+    "oracle": "monster-lp",
+    "oracleId": "monster-mss-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "jul-juld",
+    "name": "JulSwap: JULD",
+    "contract": "0x90d8AB2731f937f9ec98d0bbe6D4CBD4D95473db",
+    "oracle": "coingecko",
+    "oracleId": "julswap",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-bdo-bnb",
+    "name": "bDollar: BDO-BNB LP",
+    "contract": "0x48Cb3540CB0BB4C6dDF638209e0631Ec85c1a477",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-bdo-bnb",
+    "tvl": 0
+  },
+
+  {
     "id": "kebab-kebab",
     "name": "Kebab: KEBAB",
     "contract": "0xE2231D4ca4921Cb35680bac714C9d40C8d217494",
