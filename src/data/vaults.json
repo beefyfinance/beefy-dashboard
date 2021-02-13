@@ -61,6 +61,15 @@
     "oracleId": "cake-bdo-bnb",
     "tvl": 0
   },
+  
+  {
+    "id": "cake-egld-bnb",
+    "name": "PancakeSwap: EGLD-BNB LP",
+    "contract": "0x3d0bd3C73eF66C8b487A49f50410173C44261285",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-egld-bnb",
+    "tvl": 0
+  },
 
   {
     "id": "kebab-kebab",
