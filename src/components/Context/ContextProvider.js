@@ -15,19 +15,26 @@ import { formatTvl } from '../../utils/format';
 export const VaultsContext = createContext(null);
 
 const fetchVaultTvl = async ({ vault, signer }) => {
-  const vaultContract = new ethers.Contract(vault.contract, BeefyVault, signer);
-  const vaultBalance = await vaultContract.balance();
+  try {
+    const vaultContract = new ethers.Contract(vault.contract, BeefyVault, signer);
+    const vaultBalance = await vaultContract.balance();
+  
+    
+    const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
+    const normalizationFactor = 1000000000;
+    const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
+    const vaultBalanceInUsd = vaultBalance.mul(normalizedPrice);
+    const result = vaultBalanceInUsd.div(normalizationFactor);
+  
+    const vaultObjTvl = utils.formatEther(result);
+    vault.tvl = Number(vaultObjTvl).toFixed(2);
+  
+    return result;
+  } catch (err) {
 
-  const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
-  const normalizationFactor = 1000000000;
-  const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
-  const vaultBalanceInUsd = vaultBalance.mul(normalizedPrice);
-  const result = vaultBalanceInUsd.div(normalizationFactor);
-
-  const vaultObjTvl = utils.formatEther(result);
-  vault.tvl = Number(vaultObjTvl).toFixed(2);
-
-  return result;
+    console.log('error fetching price tvl:', vault.oracleId);
+    return 0;
+  }
 };
 
 const fetchGlobalTvl = async ({ signer, setGlobalTvl }) => {
