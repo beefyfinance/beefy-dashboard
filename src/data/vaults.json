@@ -7,6 +7,78 @@
     "oracleId": "BIFI",
     "tvl": 0
   },
+  
+  {
+    "id": "auto-btc",
+    "name": "BTCB",
+    "contract": "0xFf750EE63F1E428De1D6C8D9d92676b5FC8376A8",
+    "oracle": "pancake",
+    "oracleId": "BTCB",
+    "tvl": 0,
+  },
+
+  {
+    "id": "auto-eth",
+    "name": "ETH",
+    "contract": "0x0a406FCBEA86aC57ACcc812E8F1B509acE5E054c",
+    "oracle": "pancake",
+    "oracleId": "ETH",
+    "tvl": 0,
+  },
+
+  {
+    "id": "auto-busd",
+    "name": "BUSD",
+    "contract": "0x559C88946e1958812dCfD8edd4f89B0C7d811F74",
+    "oracle": "pancake",
+    "oracleId": "BUSD",
+    "tvl": 0,
+  },
+
+  {
+    "id": "auto-usdt",
+    "name": "USDT (Auto)",
+    "contract": "0x58327471A57EE89Aa4b91753fF9E09f7291236C7",
+    "oracle": "pancake",
+    "oracleId": "USDT",
+    "tvl": 0
+  },
+
+  {
+    "id": "auto-usdc",
+    "name": "USDC (Auto)",
+    "contract": "0x7E45e8E3404a2C142d7E8eAE94EaEB8641607857",
+    "oracle": "pancake",
+    "oracleId": "USDC",
+    "tvl": 0
+  },
+
+  {
+    "id": "auto-cake",
+    "name": "CAKE (Auto)",
+    "contract": "0xe0B473c0dD6D7Fea5B395c3Ce7ffd4FEF0ab4373",
+    "oracle": "pancake",
+    "oracleId": "Cake",
+    "tvl": 0
+  },
+
+  {
+    "id": "auto-wbnb",
+    "name": "WBNB (Auto)",
+    "contract": "0x5B06aA1ebd2e15bC6001076355E5B4C39Cbc83F3",
+    "oracle": "pancake",
+    "oracleId": "WBNB",
+    "tvl": 0
+  },
+
+  {
+    "id": "kebab-kebab-btc",
+    "name": "KEBAB-BTCB LP",
+    "contract": "0x02a77B01BE5BB6a73b70E2b5615694F71a2c4F41",
+    "oracle": "kebab-lp",
+    "oracleId": "kebab-kebab-btc",
+    "tvl": 0
+  },
 
   {
     "id": "cake-swgb-bnb",
@@ -50,42 +122,6 @@
     "contract": "0x8FF55869e05492c127cEEc6A400D7e3803fC44E1",
     "oracle": "pancake-lp",
     "oracleId": "cake-ditto-bnb",
-    "tvl": 0
-  },
-
-  {
-    "id": "auto-cake",
-    "name": "CAKE × AUTO",
-    "contract": "0xe0B473c0dD6D7Fea5B395c3Ce7ffd4FEF0ab4373",
-    "oracle": "pancake",
-    "oracleId": "Cake",
-    "tvl": 0
-  },
-
-  {
-    "id": "auto-cake-old",
-    "name": "CAKE × AUTO (old)",
-    "contract": "0x895CF1E805cBd86355caC101aE9B252c806Dc59b",
-    "oracle": "pancake",
-    "oracleId": "Cake",
-    "tvl": 0
-  },
-
-  {
-    "id": "auto-wbnb-old",
-    "name": "WBNB × AUTO",
-    "contract": "0x8136C5EE816fD80b80C9679e785F37EBdf2199eE",
-    "oracle": "pancake",
-    "oracleId": "WBNB",
-    "tvl": 0
-  },
-
-  {
-    "id": "auto-busd-old",
-    "name": "BUSD × AUTO",
-    "contract": "0xBd198f5132631e597518529268000A0199f07492",
-    "oracle": "pancake",
-    "oracleId": "BUSD",
     "tvl": 0
   },
 
