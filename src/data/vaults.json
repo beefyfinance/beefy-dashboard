@@ -10,7 +10,7 @@
   
   {
     "id": "auto-btc",
-    "name": "BTCB",
+    "name": "BTCB (Auto)",
     "contract": "0xFf750EE63F1E428De1D6C8D9d92676b5FC8376A8",
     "oracle": "pancake",
     "oracleId": "BTCB",
@@ -19,7 +19,7 @@
 
   {
     "id": "auto-eth",
-    "name": "ETH",
+    "name": "ETH (Auto)",
     "contract": "0x0a406FCBEA86aC57ACcc812E8F1B509acE5E054c",
     "oracle": "pancake",
     "oracleId": "ETH",
@@ -28,7 +28,7 @@
 
   {
     "id": "auto-busd",
-    "name": "BUSD",
+    "name": "BUSD (Auto)",
     "contract": "0x559C88946e1958812dCfD8edd4f89B0C7d811F74",
     "oracle": "pancake",
     "oracleId": "BUSD",
