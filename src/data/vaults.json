@@ -71,6 +71,69 @@
     "tvl": 0
   },
 
+   {
+    "id": "auto-beth-eth",
+    "name": "BETH-ETH Pancake LP",
+    "contract": "0x17657955D954bD7F7315C388D7099af7B0b851FA",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-beth-eth",
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-comp-eth",
+    "name": "COMP-ETH Pancake LP",
+    "contract": "0xEA01ca0423acb8476E1D3Bae572021c2aA9bd410",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-comp-eth"
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-eos-bnb",
+    "name": "EOS-BNB Pancake LP",
+    "contract": "0x9C50880a547A7a247E2C8cA5b444624D3A2AB81B",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-eos-bnb",
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-hget-bnb",
+    "name": "HGET-BNB Pancake LP",
+    "contract": "0x0095F3A9bB00b2bcDa35650cE6387c7A82AF8F0b",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-hget-bnb",
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-ctk-bnb",
+    "name": "CTK-BNB Pancake LP",
+    "contract": "0x24A333E00732e431a4434F026523b762336225bc",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-ctk-bnb",
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-ust-busd",
+    "name": "UST-BUSD Pancake LP",
+    "contract": "0x0624Ab4290F9305fB2dE3fB287aa5CDcf36D6B51",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-ust-busd",
+    "tvl": 0
+  },
+  
+   {
+    "id": "auto-lina-busd",
+    "name": "LINA-BUSD Pancake LP",
+    "contract": "x462066c67A729572668B6CF79151c0ed67734D91",
+    "oracle": "pancake-lp",
+    "oracleId": "auto-lina-busd",
+    "tvl": 0
+  },
+  
   {
     "id": "kebab-kebab-btc",
     "name": "KEBAB-BTCB LP",
