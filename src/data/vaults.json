@@ -73,7 +73,7 @@
 
    {
     "id": "auto-beth-eth",
-    "name": "BETH-ETH Pancake LP",
+    "name": "Auto: BETH-ETH Pancake LP",
     "contract": "0x17657955D954bD7F7315C388D7099af7B0b851FA",
     "oracle": "pancake-lp",
     "oracleId": "auto-beth-eth",
@@ -82,7 +82,7 @@
   
    {
     "id": "auto-comp-eth",
-    "name": "COMP-ETH Pancake LP",
+    "name": "Auto: COMP-ETH Pancake LP",
     "contract": "0xEA01ca0423acb8476E1D3Bae572021c2aA9bd410",
     "oracle": "pancake-lp",
     "oracleId": "auto-comp-eth",
@@ -91,7 +91,7 @@
   
    {
     "id": "auto-eos-bnb",
-    "name": "EOS-BNB Pancake LP",
+    "name": "Auto: EOS-BNB Pancake LP",
     "contract": "0x9C50880a547A7a247E2C8cA5b444624D3A2AB81B",
     "oracle": "pancake-lp",
     "oracleId": "auto-eos-bnb",
@@ -100,7 +100,7 @@
   
    {
     "id": "auto-hget-bnb",
-    "name": "HGET-BNB Pancake LP",
+    "name": "Auto: HGET-BNB Pancake LP",
     "contract": "0x0095F3A9bB00b2bcDa35650cE6387c7A82AF8F0b",
     "oracle": "pancake-lp",
     "oracleId": "auto-hget-bnb",
@@ -109,7 +109,7 @@
   
    {
     "id": "auto-ctk-bnb",
-    "name": "CTK-BNB Pancake LP",
+    "name": "Auto: CTK-BNB Pancake LP",
     "contract": "0x24A333E00732e431a4434F026523b762336225bc",
     "oracle": "pancake-lp",
     "oracleId": "auto-ctk-bnb",
@@ -118,7 +118,7 @@
   
    {
     "id": "auto-ust-busd",
-    "name": "UST-BUSD Pancake LP",
+    "name": "Auto: UST-BUSD Pancake LP",
     "contract": "0x0624Ab4290F9305fB2dE3fB287aa5CDcf36D6B51",
     "oracle": "pancake-lp",
     "oracleId": "auto-ust-busd",
@@ -127,7 +127,7 @@
   
    {
     "id": "auto-lina-busd",
-    "name": "LINA-BUSD Pancake LP",
+    "name": "Auto: LINA-BUSD Pancake LP",
     "contract": "x462066c67A729572668B6CF79151c0ed67734D91",
     "oracle": "pancake-lp",
     "oracleId": "auto-lina-busd",
@@ -145,7 +145,7 @@
 
   {
     "id": "cake-swgb-bnb",
-    "name": "SWGB-BNB LP",
+    "name": "Pancake: SWGB-BNB LP",
     "contract": "0xed324b068e31c6fB7C7921e79E54d95B1Ca9d759",
     "oracle": "pancake-lp",
     "oracleId": "cake-swgb-bnb",
@@ -154,7 +154,7 @@
 
   {
     "id": "cake-lit-bnb",
-    "name": "LIT-BNB LP",
+    "name": "Pancake: LIT-BNB LP",
     "contract": "0x747f66e2Ab1b887a2207e15ADb7f9dAB79D9EAcf",
     "oracle": "pancake-lp",
     "oracleId": "cake-lit-bnb",
@@ -163,7 +163,7 @@
 
   {
     "id": "cake-hard-bnb",
-    "name": "HARD-BNB LP",
+    "name": "Pancake: HARD-BNB LP",
     "contract": "0xc41BB9dEF52Dd7ceD10c27fF2cCEC3299603299B",
     "oracle": "pancake-lp",
     "oracleId": "cake-hard-bnb",
@@ -181,7 +181,7 @@
 
   {
     "id": "cake-ditto-bnb",
-    "name": "DITTO-BNB LP",
+    "name": "Pancake: DITTO-BNB LP",
     "contract": "0x8FF55869e05492c127cEEc6A400D7e3803fC44E1",
     "oracle": "pancake-lp",
     "oracleId": "cake-ditto-bnb",
