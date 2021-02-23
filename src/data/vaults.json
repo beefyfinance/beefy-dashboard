@@ -71,77 +71,123 @@
     "tvl": 0
   },
 
-   {
-    "id": "auto-beth-eth",
-    "name": "Auto: BETH-ETH Pancake LP",
-    "contract": "0x17657955D954bD7F7315C388D7099af7B0b851FA",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-beth-eth",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-comp-eth",
-    "name": "Auto: COMP-ETH Pancake LP",
-    "contract": "0xEA01ca0423acb8476E1D3Bae572021c2aA9bd410",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-comp-eth",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-eos-bnb",
-    "name": "Auto: EOS-BNB Pancake LP",
-    "contract": "0x9C50880a547A7a247E2C8cA5b444624D3A2AB81B",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-eos-bnb",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-hget-bnb",
-    "name": "Auto: HGET-BNB Pancake LP",
-    "contract": "0x0095F3A9bB00b2bcDa35650cE6387c7A82AF8F0b",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-hget-bnb",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-ctk-bnb",
-    "name": "Auto: CTK-BNB Pancake LP",
-    "contract": "0x24A333E00732e431a4434F026523b762336225bc",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-ctk-bnb",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-ust-busd",
-    "name": "Auto: UST-BUSD Pancake LP",
-    "contract": "0x0624Ab4290F9305fB2dE3fB287aa5CDcf36D6B51",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-ust-busd",
-    "tvl": 0
-  },
-  
-   {
-    "id": "auto-lina-busd",
-    "name": "Auto: LINA-BUSD Pancake LP",
-    "contract": "x462066c67A729572668B6CF79151c0ed67734D91",
-    "oracle": "pancake-lp",
-    "oracleId": "auto-lina-busd",
-    "tvl": 0
-  },
-  
   {
-    "id": "kebab-kebab-btc",
-    "name": "KEBAB-BTCB LP",
-    "contract": "0x02a77B01BE5BB6a73b70E2b5615694F71a2c4F41",
-    "oracle": "kebab-lp",
-    "oracleId": "kebab-kebab-btc",
+    "id": "mdex-mdx-usdt",
+    "name": "MDEX: MDX-USDT LP",
+    "contract": "0x5c2197149ce7CAb038aB09C45087a09070E32C73",
+    "oracle": "mdex-lp",
+    "oracleId": "mdex-mdx-usdt",
     "tvl": 0
   },
+
+  {
+    "id": "mdex-mdx-wht",
+    "name": "MDEX: MDX-WHT LP",
+    "contract": "0xd93A86BbF40454A7BCD339614fB46C67bE31B908",
+    "oracle": "mdex-lp",
+    "oracleId": "mdex-mdx-wht",
+    "tvl": 0
+  },
+
+  {
+    "id": "mdex-wht-usdt",
+    "name": "MDEX: WHT-USDT LP",
+    "contract": "0x2f536faCbC780B9ccA02545d2aA71021d7308c5E",
+    "oracle": "mdex-lp",
+    "oracleId": "mdex-wht-usdt",
+    "tvl": 0
+  },
+
+  {
+    "id": "mdex-wht-husd",
+    "name": "MDEX: WHT-HUSD LP",
+    "contract": "0x3492eF16b2ACb5b5240436d5D2B657fDc2b0b1eB",
+    "oracle": "mdex-lp",
+    "oracleId": "mdex-wht-husd",
+    "tvl": 0
+  },
+
+  {
+    "id": "mdex-wht-husd",
+    "name": "MDEX: WHT-HUSD LP",
+    "contract": "0x3492eF16b2ACb5b5240436d5D2B657fDc2b0b1eB",
+    "oracle": "mdex-lp",
+    "oracleId": "mdex-wht-husd",
+    "tvl": 0
+  },
+
+  {
+    "id": "monster-hbtc-usdt",
+    "name": "MonsterSlayer: HBTC-USDT LP",
+    "contract": "0x1Ff05E1Fb13931eBE19363441bF10f8c5dCc963E",
+    "oracle": "monster-lp",
+    "oracleId": "monster-hbtc-usdt",
+    "tvl": 0
+  },
+
+  {
+    "id": "monster-eth-usdt",
+    "name": "MonsterSlayer: ETH-USDT LP",
+    "contract": "0x56Fb7dA3025f76d2128Ef1b0D2EEA47Dd45e7C2a",
+    "oracle": "monster-lp",
+    "oracleId": "monster-eth-usdt",
+    "tvl": 0
+  },
+
+  {
+    "id": "monster-msc-busd",
+    "name": "MonsterSlayer: MSC-BUSD LP",
+    "contract": "0x1d9a453FCe2AC7b92FBe7b33BdC40F6e7aE14F47",
+    "oracle": "monster-lp",
+    "oracleId": "monster-msc-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "monster-msc-bnb",
+    "name": "MonsterSlayer: MSC-BNB LP",
+    "contract": "0x0F88Ce20f8af6D4c51b635BFBd8DFa03f2a36ACa",
+    "oracle": "monster-lp",
+    "oracleId": "monster-msc-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "nyacash-nyas-usdt",
+    "name": "NyaCash: NYAS-USDT LP",
+    "contract": "0x5ee82A50D1C7a1B599a5d4DA2f54AdB0d7a497a6",
+    "oracle": "nyanswop-lp",
+    "oracleId": "nyanswop-nyas-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-sfp-bnb",
+    "name": "PancakeSwap: SFP-BNB LP",
+    "contract": "0xCa38d57755f29c9ad17AbB1A6ae059DdAD913A0e",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-sfp-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-bts-busd",
+    "name": "Bolt: BTS-BUSD LP",
+    "contract": "0x6b40106ebEDaA719B14cfbA606b89954EaeeaE9D",
+    "oracle": "bolt-lp",
+    "oracleId": "cake-bts-busd",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-btd-busd",
+    "name": "Bolt: BTD-BUSD LP",
+    "contract": "0x0D3837E00C47353e68680C39e6DA6B5b08fE6897",
+    "oracle": "bolt-lp",
+    "oracleId": "cake-btd-busd",
+    "tvl": 0
+  },
+
 
   {
     "id": "cake-swgb-bnb",
@@ -149,6 +195,15 @@
     "contract": "0xed324b068e31c6fB7C7921e79E54d95B1Ca9d759",
     "oracle": "pancake-lp",
     "oracleId": "cake-swgb-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "cake-egld-bnb",
+    "name": "PancakeSwap: EGLD-BNB LP",
+    "contract": "0x3d0bd3C73eF66C8b487A49f50410173C44261285",
+    "oracle": "pancake-lp",
+    "oracleId": "cake-egld-bnb",
     "tvl": 0
   },
 
@@ -239,6 +294,42 @@
     "contract": "0x2Eb92E2882030B8e153370d208462D4dDf7041d2",
     "oracle": "kebab-lp",
     "oracleId": "kebab-kebab-bnb",
+    "tvl": 0
+  },
+
+  {
+    "id": "kebab-kebab-btc",
+    "name": "Kebab: KEBAB-BTC LP",
+    "contract": "0x02a77B01BE5BB6a73b70E2b5615694F71a2c4F41",
+    "oracle": "kebab-lp",
+    "oracleId": "kebab-kebab-btc",
+    "tvl": 0
+  },
+
+  {
+    "id": "soak-soak",
+    "name": "Sponge: SOAK",
+    "contract": "0x9c88B6CEf6aB3cEec955c9eeC3a9811Ad2d6B63b",
+    "oracle": "sponge-lp",
+    "oracleId": "soak-soak",
+    "tvl": 0
+  },
+
+  {
+    "id": "sponge-sponge-bnb",
+    "name": "Sponge: SPONGE-BNB LP",
+    "contract": "0x1B3564F698988804b5D05a2C10B1d71bE051662F",
+    "oracle": "sponge-lp",
+    "oracleId": "sponge-sponge-btc",
+    "tvl": 0
+  },
+
+  {
+    "id": "sponge-soak-bnb",
+    "name": "Sponge: SOAK-BNB",
+    "contract": "0xE035Dce0E345Cbd46F3c0dCBf602f96c5F741813",
+    "oracle": "sponge-lp",
+    "oracleId": "sponge-soak-bnb",
     "tvl": 0
   },
 
@@ -529,7 +620,7 @@
 
   {
     "id": "thugs-drugs-bhc",
-    "name": "DRUGS BHC",
+    "name": "Streetswap: DRUGS BHC",
     "contract": "0xE7408598DB157Cd4A24Bc26B579910AF36a72fad",
     "oracle": "thugs",
     "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -538,7 +629,7 @@
 
   {
     "id": "thugs-drugs-jgn",
-    "name": "DRUGS JGN",
+    "name": "Streetswap: DRUGS JGN",
     "contract": "0x40e39743dBcb30c7Fc4152F57F29Cd22D9fc7932",
     "oracle": "thugs",
     "oracleId": "0x339550404Ca4d831D12B1b2e4768869997390010_0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -869,7 +960,7 @@
 
   {
     "id": "street-drugs-bnb",
-    "name": "DRUGS-BNB TLP v2",
+    "name": "Streetswap: DRUGS-BNB TLP v2",
     "contract": "0x9D729179E429153a6aca26389e6a9b625431C79B",
     "oracle": "thugs-lp",
     "oracleId": "street-drugs-bnb",
@@ -878,7 +969,7 @@
 
   {
     "id": "street-thugs-bnb",
-    "name": "THUGS-BNB TLP v2",
+    "name": "Streetswap: THUGS-BNB TLP v2",
     "contract": "0xe789711992020575e07381fdb3dFDc251Ec4d027",
     "oracle": "thugs-lp",
     "oracleId": "street-thugs-bnb",
@@ -887,7 +978,7 @@
 
   {
     "id": "street-cred-bnb",
-    "name": "CRED-BNB TLP",
+    "name": "StreetSwap: CRED-BNB TLP",
     "contract": "0x0adc208151e6b7AE1D884b64fDA662d10B4F6174",
     "oracle": "thugs-lp",
     "oracleId": "street-cred-bnb",
@@ -895,7 +986,7 @@
   },
   {
     "id": "street-guns-bnb",
-    "name": "GUNS-BNB TLP v2",
+    "name": "StreetSwap: GUNS-BNB TLP v2",
     "contract": "0x68aE2aB6448884714DDf11C8d55ea7578C65D502",
     "oracle": "thugs-lp",
     "oracleId": "street-guns-bnb",
@@ -904,7 +995,7 @@
 
   {
     "id": "street-busd-bnb",
-    "name": "BUSD-BNB TLP v2",
+    "name": "StreetSwap: BUSD-BNB TLP v2",
     "contract": "0x2091b25f02275a4D791075f83c904Fa5Fb96B5A7",
     "oracle": "thugs-lp",
     "oracleId": "street-busd-bnb",
@@ -913,7 +1004,7 @@
 
   {
     "id": "street-btc-bnb",
-    "name": "BTC-BNB LP v2",
+    "name": "StreetSwap: BTC-BNB LP v2",
     "contract": "0x498515AB07d72d24A85343322834a66e79e146f8",
     "oracle": "thugs-lp",
     "oracleId": "street-btc-bnb",
@@ -922,7 +1013,7 @@
 
   {
     "id": "street-eth-bnb",
-    "name": "ETH-BNB TLP v2",
+    "name": "StreetSwap: ETH-BNB TLP v2",
     "contract": "0x5EA6fE190f9F7B814fDc438A6CC448d094740588",
     "oracle": "thugs-lp",
     "oracleId": "street-eth-bnb",
@@ -931,7 +1022,7 @@
 
   {
     "id": "street-panacakelp-thugs-bnb",
-    "name": "THUGS-BNB Pancake LP",
+    "name": "StreetSwap: THUGS-BNB Pancake LP",
     "contract": "0x7A99078ba8960871233377C7aE6B5d2A61229A43",
     "oracle": "thugs-lp",
     "oracleId": "street-panacakelp-thugs-bnb",
@@ -940,7 +1031,7 @@
 
   {
     "id": "street-narwhallp-thugs-bnb",
-    "name": "THUGS-BNB Narwhal LP",
+    "name": "StreetSwap: THUGS-BNB Narwhal LP",
     "contract": "0xcB60700DB502F9908B8656C38D052c1BD54D291c",
     "oracle": "thugs-lp",
     "oracleId": "street-panacakelp-thugs-bnb",
@@ -949,7 +1040,7 @@
 
   {
     "id": "street-dai-bnb",
-    "name": "DAI-BNB TLP",
+    "name": "StreetSwap: DAI-BNB TLP",
     "contract": "0x3CAd2fF669865359b80a2d948A10e1810f7486D7",
     "oracle": "thugs-lp",
     "oracleId": "street-dai-bnb",
@@ -958,7 +1049,7 @@
 
   {
     "id": "street-usdt-bnb",
-    "name": "USDT-BNB TLP",
+    "name": "StreetSwap: USDT-BNB TLP",
     "contract": "0x390f28E3919D2c4d9624Ae9AeBe6da25322ED56D",
     "oracle": "thugs-lp",
     "oracleId": "street-usdt-bnb",
@@ -967,7 +1058,7 @@
 
   {
     "id": "street-bliq-bnb",
-    "name": "BLIQ-BNB TLP",
+    "name": "StreetSwap: BLIQ-BNB TLP",
     "contract": "0x84d95337c83B84688DFE678117e1539786f8c4Cb",
     "oracle": "thugs-lp",
     "oracleId": "street-bliq-bnb",
@@ -976,7 +1067,7 @@
 
   {
     "id": "street-eos-bnb",
-    "name": "EOS-BNB TLP",
+    "name": "StreetSwap: EOS-BNB TLP",
     "contract": "0xd4572009c7580DEfa0251FFD811b04386Dd41570",
     "oracle": "thugs-lp",
     "oracleId": "street-eos-bnb",
@@ -985,7 +1076,7 @@
 
   {
     "id": "street-bch-bnb",
-    "name": "BCH-BNB TLP",
+    "name": "StreetSwap: BCH-BNB TLP",
     "contract": "0x1bcc82ce9b387E16fC383af563fd400074E3f060",
     "oracle": "thugs-lp",
     "oracleId": "street-bch-bnb",
@@ -994,7 +1085,7 @@
 
   {
     "id": "street-link-bnb",
-    "name": "LINK-BNB TLP",
+    "name": "StreetSwap: LINK-BNB TLP",
     "contract": "0x3DbBDFA0A412Fd15ef9fc4CEb3Fcc19Ff329980b",
     "oracle": "thugs-lp",
     "oracleId": "street-link-bnb",
