@@ -6,13 +6,16 @@ const endpoints = {
   bakeryLp:  'https://api.beefy.finance/bakery/lps',
   bandchain: 'https://poa-api.bandchain.org',
   bdollarLp: 'https://api.beefy.finance/bdollar/lps',
+  boltLp:    'https://api.beefy.finance/bolt/lps',
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
   jetfuelLp: 'https://api.beefy.finance/jetfuel/lps',
   kebabLp:   'https://api.beefy.finance/kebab/lps',
+  mdexLP:    'https://api.beefy.finance/mdex/lps',
   monsterLP: 'https://api.beefy.finance/monster/lps',
   narwhalLp: 'https://api.beefy.finance/narwhal/lps',
   pancake:   'https://api.beefy.finance/pancake/price',
   pancakeLp: 'https://api.beefy.finance/pancake/lps',
+  spongeLp:  'https://api.beefy.finance/pancake/lps',
   thugs:     'https://api.beefy.finance/thugs/tickers',
   thugsLp:   'https://api.beefy.finance/thugs/lps',
 };
@@ -137,6 +140,10 @@ export const fetchPrice = async ({ oracle, id }) => {
     case 'bdollar-lp':
       price = await fetchLP(id, endpoints.bdollarLp);
       break;  
+
+    case 'bolt-lp':
+      price = await fetchLP(id, endpoints.boltLp);
+      break;  
     
     case 'coingecko':
       price = await fetchCoingecko(id);
@@ -154,6 +161,10 @@ export const fetchPrice = async ({ oracle, id }) => {
       price = await fetchLP(id, endpoints.monsterLP);
       break;
     
+    case 'mdex-lp':
+      price = await fetchLP(id, endpoints.mdexLP);
+      break;
+
     case 'narwhal-lp':
       price = await fetchLP(id, endpoints.narwhalLp);
       break;
@@ -164,6 +175,10 @@ export const fetchPrice = async ({ oracle, id }) => {
 
     case 'pancake-lp':
       price = await fetchLP(id, endpoints.pancakeLp);
+      break;
+
+    case 'sponge-lp':
+      price = await fetchLP(id, endpoints.spongeLp);
       break;
 
     case 'thugs':
