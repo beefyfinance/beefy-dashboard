@@ -225,6 +225,15 @@
     "tvl": 0
   },
 
+   {
+    "id": "kebab-eth-btcb",
+    "name": "Kebab: ETH-BTCB LP",
+    "contract": "0x70CBc8B3a74A857056a6acE7e994229A24D4ab94",
+    "oracle": "kebab-lp",
+    "oracleId": "kebab-eth-btcb",
+    "tvl": 0
+  },
+  
   {
     "id": "kebab-bifi-busd",
     "name": "Kebab: BIFI-BUSD LP",
