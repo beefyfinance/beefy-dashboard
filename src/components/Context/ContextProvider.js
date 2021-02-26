@@ -87,6 +87,9 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
 const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
   let earnings = await getEarnings() || { daily: 0, total: 0 };
   if(!earnings.total){ earnings.total = 0; }
+  if (typeof earnings.total === "string" || earnings.total instanceof String) {
+    earnings.total = Number(earnings.total) / 1e18;
+  }
 
   setDailyEarnings(earnings.daily.toFixed(2));
   setTotalEarnings(earnings.total.toFixed(2));
