@@ -65,7 +65,7 @@ const fetchCoingecko = async id => {
 const fetchPancake = async id => {
   try {
     const response = await axios.get(endpoints.pancake);
-    return response.data.prices[id];
+    return response.data[id];
   } catch (err) {
     console.error(err);
     return 0;

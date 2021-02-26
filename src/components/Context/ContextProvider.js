@@ -4,19 +4,19 @@ import { ethers, utils, BigNumber } from 'ethers';
 import BeefyVault from '../../abis/BeefyVault.json';
 import ERC20 from '../../abis/ERC20.json';
 
-import vaults from '../../data/vaults';
 import addr from '../../data/addresses';
 
 import { fetchPrice } from '../../utils/fetchPrice';
 import { getHolders } from '../../utils/getHolders';
 import { getEarnings } from '../../utils/getEarnings';
 import { formatTvl } from '../../utils/format';
+import { getVaults } from "../../utils/getVaults";
 
 export const VaultsContext = createContext(null);
 
 const fetchVaultTvl = async ({ vault, signer }) => {
   try {
-    const vaultContract = new ethers.Contract(vault.contract, BeefyVault, signer);
+    const vaultContract = new ethers.Contract(vault.earnedTokenAddress, BeefyVault, signer);
     const vaultBalance = await vaultContract.balance();
   
     
@@ -37,12 +37,14 @@ const fetchVaultTvl = async ({ vault, signer }) => {
   }
 };
 
-const fetchGlobalTvl = async ({ signer, setGlobalTvl }) => {
+const fetchGlobalTvl = async ({ vaults, signer, setGlobalTvl }) => {
   let promises = [];
   vaults.forEach((vault) => promises.push(fetchVaultTvl({ vault, signer })));
   const values = await Promise.all(promises);
 
-  const totalTvl = values.reduce((acc, curr) => acc.add(curr));
+  const totalTvl = values.reduce(function(acc, curr) {
+    return acc.add(curr);
+  }, BigNumber.from(0));
   setGlobalTvl(utils.formatEther(totalTvl));
 };
 
@@ -90,6 +92,10 @@ const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
   setTotalEarnings(earnings.total.toFixed(2));
 };
 
+const fetchVaults = async (setVaults) => {
+  setVaults(await getVaults());
+};
+
 const ContextProvider = ({ children }) => {
   const [ vaultCount, setVaultCount ] = useState(0);
   const [ globalTvl, setGlobalTvl ] = useState(BigNumber.from(0));
@@ -100,6 +106,11 @@ const ContextProvider = ({ children }) => {
   const [ marketCap, setMarketCap ] = useState(0);
   const [ dailyEarnings, setDailyEarnings ] = useState(0);
   const [ totalEarnings, setTotalEarnings ] = useState(0);
+  const [ vaults, setVaults ] = useState([]);
+
+  useEffect(() => {
+    fetchVaults(setVaults);
+  }, []);
 
   useEffect(() => { 
     // FIXME: is there a safer way to fetch the provider?
@@ -107,13 +118,13 @@ const ContextProvider = ({ children }) => {
     const signer = provider.getSigner();
 
     setVaultCount(vaults.length);
-    fetchGlobalTvl({ signer, setGlobalTvl });
+    fetchGlobalTvl({ vaults, signer, setGlobalTvl });
     fetchTreasuryBalance({ signer, setTreasury });
     fetchStakedBifi({ provider, signer, setStakedBifi });
     fetchBifiHolders({ setBifiHolders });
     fetchBifiPrice({ setBifiPrice, setMarketCap });
     fetchEarnings({ setDailyEarnings, setTotalEarnings });
-  }, []);
+  }, [vaults]);
 
   return (
     <VaultsContext.Provider
