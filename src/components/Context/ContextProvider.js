@@ -42,9 +42,7 @@ const fetchGlobalTvl = async ({ vaults, signer, setGlobalTvl }) => {
   vaults.forEach((vault) => promises.push(fetchVaultTvl({ vault, signer })));
   const values = await Promise.all(promises);
 
-  const totalTvl = values.reduce(function(acc, curr) {
-    return acc.add(curr);
-  }, BigNumber.from(0));
+  const totalTvl = values.reduce((acc, curr) => acc.add(curr), BigNumber.from(0));
   setGlobalTvl(utils.formatEther(totalTvl));
 };
 
