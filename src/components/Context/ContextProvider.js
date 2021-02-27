@@ -21,7 +21,7 @@ const fetchVaultTvl = async ({ vault, signer }) => {
   
     
     const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
-    const normalizationFactor = 1000000000;
+    const normalizationFactor = 100000;
     const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
     const vaultBalanceInUsd = vaultBalance.mul(normalizedPrice);
     const result = vaultBalanceInUsd.div(normalizationFactor);
