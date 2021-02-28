@@ -25,7 +25,8 @@ export default function BasicTable() {
 						<TableRow key={row.id}>
 							<TableCell>{row.name}</TableCell>
 							<TableCell>
-								<ContractAddress href={`https://bscscan.com/address/${row.contract}`} target="_blank" rel="noreferrer">{row.contract}</ContractAddress>
+                <ContractAddress href={`https://bscscan.com/address/${row.earnContractAddress}`} target="_blank"
+                                 rel="noreferrer">{row.earnContractAddress}</ContractAddress>
 							</TableCell>
 							<TableCell>
 								<ContractTVL>{formatTvl(row.tvl)}</ContractTVL>
