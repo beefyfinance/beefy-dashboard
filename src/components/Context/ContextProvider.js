@@ -18,17 +18,17 @@ const fetchVaultTvl = async ({ vault, signer }) => {
   try {
     const vaultContract = new ethers.Contract(vault.earnedTokenAddress, BeefyVault, signer);
     const vaultBalance = await vaultContract.balance();
-  
-    
+
+
     const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
     const normalizationFactor = 100000;
     const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
     const vaultBalanceInUsd = vaultBalance.mul(normalizedPrice);
     const result = vaultBalanceInUsd.div(normalizationFactor);
-  
+
     const vaultObjTvl = utils.formatEther(result);
     vault.tvl = Number(vaultObjTvl).toFixed(2);
-  
+
     return result;
   } catch (err) {
 
@@ -113,12 +113,12 @@ const ContextProvider = ({ children }) => {
     fetchVaults(setVaults);
   }, []);
 
-  useEffect(() => { 
+  useEffect(() => {
     // FIXME: is there a safer way to fetch the provider?
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
-    setVaultCount(vaults.length);
+    setVaultCount(vaults.filter(vault => vault.status === "active").length);
     fetchGlobalTvl({ vaults, signer, setGlobalTvl });
     fetchTreasuryBalance({ signer, setTreasury });
     fetchStakedBifi({ provider, signer, setStakedBifi });
