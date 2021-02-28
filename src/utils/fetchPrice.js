@@ -6,15 +6,20 @@ const endpoints = {
   bakeryLp:  'https://api.beefy.finance/bakery/lps',
   bandchain: 'https://poa-api.bandchain.org',
   bdollarLp: 'https://api.beefy.finance/bdollar/lps',
+  boltLp:    'https://api.beefy.finance/bolt/lps',
+  cafeLp:    'https://api.beefy.finance/cafe/lps',
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
   jetfuelLp: 'https://api.beefy.finance/jetfuel/lps',
   kebabLp:   'https://api.beefy.finance/kebab/lps',
-  monsterLP: 'https://api.beefy.finance/monster/lps',
+  monsterLp: 'https://api.beefy.finance/monster/lps',
   narwhalLp: 'https://api.beefy.finance/narwhal/lps',
+  nyanswopLp:'https://api.beefy.finance/nyanswop/lps',
   pancake:   'https://api.beefy.finance/pancake/price',
   pancakeLp: 'https://api.beefy.finance/pancake/lps',
+  ramenLp:   'https://api.beefy.finance/ramen/lps',
   thugs:     'https://api.beefy.finance/thugs/tickers',
   thugsLp:   'https://api.beefy.finance/thugs/lps',
+  spongeLp:  'https://api.beefy.finance/sponge/lps',
 };
 
 const CACHE_TIMEOUT = 30 * 60 * 1000;
@@ -65,7 +70,7 @@ const fetchCoingecko = async id => {
 const fetchPancake = async id => {
   try {
     const response = await axios.get(endpoints.pancake);
-    return response.data.prices[id];
+    return response.data[id];
   } catch (err) {
     console.error(err);
     return 0;
@@ -106,6 +111,23 @@ const fetchLP = async (id, endpoint) => {
   }
 };
 
+const oracleLpEndpoints = {
+  "bakery": endpoints.bakery,
+  "bakery-lp": endpoints.bakeryLp,
+  "bdollar-lp": endpoints.bdollarLp,
+  "jetfuel-lp": endpoints.jetfuelLp,
+  "monster-lp": endpoints.monsterLp,
+  "narwhal-lp": endpoints.narwhalLp,
+  "nyanswop-lp": endpoints.nyanswopLp,
+  "pancake-lp": endpoints.pancakeLp,
+  "thugs-lp": endpoints.thugsLp,
+  "kebab-lp": endpoints.kebabLp,
+  "sponge-lp": endpoints.spongeLp,
+  "bolt-lp": endpoints.boltLp,
+  "cafe-lp": endpoints.cafeLp,
+  "ramen-lp": endpoints.ramenLp
+};
+
 export const fetchPrice = async ({ oracle, id }) => {
   if (oracle === undefined) {
     console.error('Undefined oracle');
@@ -125,56 +147,24 @@ export const fetchPrice = async ({ oracle, id }) => {
     case 'band':
       price = await fetchBand(id);
       break;
-    
-    case 'bakery':
-      price = await fetchLP(id, endpoints.bakery);
-      break;
 
-    case 'bakery-lp':
-      price = await fetchLP(id, endpoints.bakeryLp);
-      break;
-    
-    case 'bdollar-lp':
-      price = await fetchLP(id, endpoints.bdollarLp);
-      break;  
-    
     case 'coingecko':
       price = await fetchCoingecko(id);
       break;
-    
-    case 'jetfuel-lp':
-      price = await fetchLP(id, endpoints.jetfuelLp);
-      break;
-    
-    case 'kebab-lp':
-      price = await fetchLP(id, endpoints.kebabLp);
-      break;
-    
-    case 'monster-lp':
-      price = await fetchLP(id, endpoints.monsterLP);
-      break;
-    
-    case 'narwhal-lp':
-      price = await fetchLP(id, endpoints.narwhalLp);
-      break;
-    
+
     case 'pancake':
       price = await fetchPancake(id);
-      break;
-
-    case 'pancake-lp':
-      price = await fetchLP(id, endpoints.pancakeLp);
       break;
 
     case 'thugs':
       price = await fetchThugs(id);
       break;
 
-    case 'thugs-lp':
-      price = await fetchLP(id, endpoints.thugsLp);
-      break;
-
     default: price = 0;
+  }
+
+  if (price === 0 && oracleLpEndpoints[oracle]) {
+    price = await fetchLP(id, oracleLpEndpoints[oracle]);
   }
 
   addToCache({ oracle, id, price });
