@@ -20,6 +20,7 @@ const endpoints = {
   thugs:     'https://api.beefy.finance/thugs/tickers',
   thugsLp:   'https://api.beefy.finance/thugs/lps',
   spongeLp:  'https://api.beefy.finance/sponge/lps',
+  crowLp: 'https://api.beefy.finance/crow/lps',
 };
 
 const CACHE_TIMEOUT = 30 * 60 * 1000;
@@ -125,7 +126,8 @@ const oracleLpEndpoints = {
   "sponge-lp": endpoints.spongeLp,
   "bolt-lp": endpoints.boltLp,
   "cafe-lp": endpoints.cafeLp,
-  "ramen-lp": endpoints.ramenLp
+  "ramen-lp": endpoints.ramenLp,
+  "crow-lp": endpoints.crowLp
 };
 
 export const fetchPrice = async ({ oracle, id }) => {

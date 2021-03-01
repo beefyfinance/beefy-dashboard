@@ -1,15 +1,15 @@
-import { createContext, useState, useEffect } from 'react';
-import { ethers, utils, BigNumber } from 'ethers';
+import { createContext, useState, useEffect } from "react";
+import { ethers, utils, BigNumber } from "ethers";
 
-import BeefyVault from '../../abis/BeefyVault.json';
-import ERC20 from '../../abis/ERC20.json';
+import BeefyVault from "../../abis/BeefyVault.json";
+import ERC20 from "../../abis/ERC20.json";
 
-import addr from '../../data/addresses';
+import addr from "../../data/addresses";
 
-import { fetchPrice } from '../../utils/fetchPrice';
-import { getHolders } from '../../utils/getHolders';
-import { getEarnings } from '../../utils/getEarnings';
-import { formatTvl } from '../../utils/format';
+import { fetchPrice } from "../../utils/fetchPrice";
+import { getHolders } from "../../utils/getHolders";
+import { getEarnings } from "../../utils/getEarnings";
+import { formatTvl } from "../../utils/format";
 import { getVaults } from "../../utils/getVaults";
 
 export const VaultsContext = createContext(null);
@@ -32,7 +32,7 @@ const fetchVaultTvl = async ({ vault, signer }) => {
     return result;
   } catch (err) {
 
-    console.log('error fetching price tvl:', vault.oracleId);
+    console.log("error fetching price tvl:", vault.oracleId, vault.oracle);
     return 0;
   }
 };
@@ -40,10 +40,23 @@ const fetchVaultTvl = async ({ vault, signer }) => {
 const fetchGlobalTvl = async ({ vaults, signer, setGlobalTvl }) => {
   let promises = [];
   vaults.forEach((vault) => promises.push(fetchVaultTvl({ vault, signer })));
-  const values = await Promise.all(promises);
+  await Promise.all(promises);
 
-  const totalTvl = values.reduce((acc, curr) => acc.add(curr), BigNumber.from(0));
-  setGlobalTvl(utils.formatEther(totalTvl));
+  let globalTvl = 0;
+
+  const isUniqueEarnContract = (pool, index, pools) => {
+    const earnContractAddress = pool.earnContractAddress;
+    return pools.findIndex(p => p.earnContractAddress === earnContractAddress) === index;
+  };
+
+  vaults
+    .filter(p => p.status === "active")
+    .filter(isUniqueEarnContract)
+    .forEach(({ tvl }) => {
+      globalTvl += Number(tvl);
+    });
+
+  setGlobalTvl(globalTvl);
 };
 
 const fetchBalance = async ({ token, address, signer }) => {
@@ -70,13 +83,13 @@ const fetchStakedBifi = async ({ provider, signer, setStakedBifi }) => {
   setStakedBifi(`${percentage.toFixed(2)} %`);
 };
 
-const fetchBifiHolders = async({ setBifiHolders }) => {
+const fetchBifiHolders = async ({ setBifiHolders }) => {
   const holders = await getHolders() || 0;
   setBifiHolders(holders);
 };
 
 const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
-  const price = await fetchPrice({ oracle: 'pancake', id: 'BIFI' });
+  const price = await fetchPrice({ oracle: "pancake", id: "BIFI" });
   const mcap = formatTvl((80000 - 4000) * price);
   setBifiPrice(`$${price.toFixed(2)}`);
   setMarketCap(mcap);
@@ -84,7 +97,9 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
 
 const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
   let earnings = await getEarnings() || { daily: 0, total: 0 };
-  if(!earnings.total){ earnings.total = 0; }
+  if (!earnings.total) {
+    earnings.total = 0;
+  }
   if (typeof earnings.total === "string" || earnings.total instanceof String) {
     earnings.total = Number(earnings.total) / 1e18;
   }
@@ -98,16 +113,16 @@ const fetchVaults = async (setVaults) => {
 };
 
 const ContextProvider = ({ children }) => {
-  const [ vaultCount, setVaultCount ] = useState(0);
-  const [ globalTvl, setGlobalTvl ] = useState(BigNumber.from(0));
-  const [ treasury, setTreasury ] = useState({ BIFI: 0, WBNB: 0 });
-  const [ stakedBifi, setStakedBifi ] = useState(0);
-  const [ bifiHolders, setBifiHolders ] = useState(0);
-  const [ bifiPrice, setBifiPrice ] = useState(0);
-  const [ marketCap, setMarketCap ] = useState(0);
-  const [ dailyEarnings, setDailyEarnings ] = useState(0);
-  const [ totalEarnings, setTotalEarnings ] = useState(0);
-  const [ vaults, setVaults ] = useState([]);
+  const [vaultCount, setVaultCount] = useState(0);
+  const [globalTvl, setGlobalTvl] = useState(BigNumber.from(0));
+  const [treasury, setTreasury] = useState({ BIFI: 0, WBNB: 0 });
+  const [stakedBifi, setStakedBifi] = useState(0);
+  const [bifiHolders, setBifiHolders] = useState(0);
+  const [bifiPrice, setBifiPrice] = useState(0);
+  const [marketCap, setMarketCap] = useState(0);
+  const [dailyEarnings, setDailyEarnings] = useState(0);
+  const [totalEarnings, setTotalEarnings] = useState(0);
+  const [vaults, setVaults] = useState([]);
 
   useEffect(() => {
     fetchVaults(setVaults);
@@ -139,7 +154,7 @@ const ContextProvider = ({ children }) => {
         stakedBifi,
         bifiHolders,
         bifiPrice,
-        marketCap,
+        marketCap
       }}
     >
       {children}
