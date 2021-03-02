@@ -23,7 +23,10 @@ export default function BasicTable() {
 				<TableBody>
 					{sortedVaults.map((row) => (
 						<TableRow key={row.id}>
-							<TableCell>{row.name}</TableCell>
+              <TableCell>
+                <div>{row.name}</div>
+                <div>{`${row.tokenDescription} / ${row.platform}`}</div>
+              </TableCell>
 							<TableCell>
                 <ContractAddress href={`https://bscscan.com/address/${row.earnContractAddress}`} target="_blank"
                                  rel="noreferrer">{row.earnContractAddress}</ContractAddress>
