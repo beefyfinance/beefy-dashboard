@@ -19,7 +19,6 @@ const fetchVaultTvl = async ({ vault, signer }) => {
     const vaultContract = new ethers.Contract(vault.earnedTokenAddress, BeefyVault, signer);
     const vaultBalance = await vaultContract.balance();
 
-
     const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
     const normalizationFactor = 100000;
     const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
@@ -31,7 +30,6 @@ const fetchVaultTvl = async ({ vault, signer }) => {
 
     return result;
   } catch (err) {
-
     console.log("error fetching price tvl:", vault.oracleId, vault.oracle);
     return 0;
   }
@@ -39,7 +37,7 @@ const fetchVaultTvl = async ({ vault, signer }) => {
 
 const fetchGlobalTvl = async ({ vaults, signer, setGlobalTvl }) => {
   let promises = [];
-  vaults.forEach((vault) => promises.push(fetchVaultTvl({ vault, signer })));
+  vaults.forEach(vault => promises.push(fetchVaultTvl({ vault, signer })));
   await Promise.all(promises);
 
   let globalTvl = 0;
@@ -67,24 +65,24 @@ const fetchBalance = async ({ token, address, signer }) => {
 const fetchTreasuryBalance = async ({ signer, setTreasury }) => {
   const values = await Promise.all([
     fetchBalance({ token: addr.BIFI, address: addr.Treasury, signer }),
-    fetchBalance({ token: addr.WBNB, address: addr.Treasury, signer })
+    fetchBalance({ token: addr.WBNB, address: addr.Treasury, signer }),
   ]);
 
   setTreasury({
     BIFI: Number(utils.formatEther(values[0])).toFixed(2),
-    WBNB: Number(utils.formatEther(values[1])).toFixed(2)
+    WBNB: Number(utils.formatEther(values[1])).toFixed(2),
   });
 };
 
 const fetchStakedBifi = async ({ provider, signer, setStakedBifi }) => {
   const values = await fetchBalance({ token: addr.BIFI, address: addr.RewardPool, signer });
   const stakedBifi = Number(utils.formatEther(values));
-  const percentage = stakedBifi / (80000 - 4000) * 100;
+  const percentage = (stakedBifi / (80000 - 4000)) * 100;
   setStakedBifi(`${percentage.toFixed(2)} %`);
 };
 
 const fetchBifiHolders = async ({ setBifiHolders }) => {
-  const holders = await getHolders() || 0;
+  const holders = (await getHolders()) || 0;
   setBifiHolders(holders);
 };
 
@@ -96,7 +94,9 @@ const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
 };
 
 const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
-  let earnings = await getEarnings() || { daily: 0, total: 0 };
+  console.log("Fetching");
+  let earnings = (await getEarnings()) || { daily: 0, total: 0 };
+  console.log("Sup", earnings);
   if (!earnings.total) {
     earnings.total = 0;
   }
@@ -108,7 +108,7 @@ const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
   setTotalEarnings(earnings.total.toFixed(2));
 };
 
-const fetchVaults = async (setVaults) => {
+const fetchVaults = async setVaults => {
   setVaults(await getVaults());
 };
 
@@ -154,7 +154,7 @@ const ContextProvider = ({ children }) => {
         stakedBifi,
         bifiHolders,
         bifiPrice,
-        marketCap
+        marketCap,
       }}
     >
       {children}

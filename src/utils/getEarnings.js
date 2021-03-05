@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
-const earningsEndpoint = "https://api.beefy.finance/earnings"
+const earningsEndpoint = "https://api.beefy.finance/earnings";
 
 const getEarnings = async () => {
   try {

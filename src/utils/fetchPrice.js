@@ -7,7 +7,7 @@ const endpoints = {
   lps: "https://api.beefy.finance/lps",
 };
 
-const CACHE_TIMEOUT = 30 * 60 * 1000;
+const CACHE_TIMEOUT = 5 * 60 * 1000;
 const cache = {};
 
 function isCached({ oracle, id }) {
