@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const vaultsEndpoint =
-  "https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/pools.js";
+  "https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/bsc_pools.js";
 
 const getVaults = async () => {
   try {
