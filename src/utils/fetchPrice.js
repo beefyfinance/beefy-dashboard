@@ -1,4 +1,5 @@
 import axios from "axios";
+import { apiCacheTime } from "./apiCacheTime";
 
 const endpoints = {
   coingecko: "https://api.coingecko.com/api/v3/simple/price",
@@ -38,7 +39,7 @@ const fetchCoingecko = async id => {
 
 const fetchPancake = async id => {
   try {
-    const response = await axios.get(endpoints.pancake);
+    const response = await axios.get(`https://api.beefy.finance/pancake/price?_=${apiCacheTime()}`);
     return response.data[id];
   } catch (err) {
     console.error(err);
@@ -46,9 +47,9 @@ const fetchPancake = async id => {
   }
 };
 
-const fetchLP = async (id, endpoint) => {
+const fetchLP = async (id) => {
   try {
-    const response = await axios.get(endpoint);
+    const response = await axios.get(`https://api.beefy.finance/lps?_=${apiCacheTime()}`);
     return response.data[id];
   } catch (err) {
     console.error(err);

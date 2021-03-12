@@ -1,10 +1,9 @@
 import axios from 'axios';
-
-const holdersEndpoint = "https://api.beefy.finance/holders"
+import { apiCacheTime } from "./apiCacheTime";
 
 const getHolders = async () => {
   try {
-    const response = await axios.get(holdersEndpoint);
+    const response = await axios.get(`https://api.beefy.finance/holders?_=${apiCacheTime()}`);
     return response.data["holderCount"];
   } catch (err) {
     console.error(err);

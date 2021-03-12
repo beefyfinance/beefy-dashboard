@@ -1,10 +1,9 @@
 import axios from "axios";
-
-const earningsEndpoint = "https://api.beefy.finance/earnings";
+import { apiCacheTime } from "./apiCacheTime";
 
 const getEarnings = async () => {
   try {
-    const response = await axios.get(earningsEndpoint);
+    const response = await axios.get(`https://api.beefy.finance/earnings?_=${apiCacheTime()}`);
     return response.data;
   } catch (err) {
     console.error(err);

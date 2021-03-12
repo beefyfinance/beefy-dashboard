@@ -1,0 +1,1 @@
+export const apiCacheTime = () => Math.trunc(Date.now() / (60 * 1000));
