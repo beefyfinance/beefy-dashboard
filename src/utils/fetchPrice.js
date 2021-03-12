@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const endpoints = {
-  bakery: "https://api.beefy.finance/bakery/price",
   coingecko: "https://api.coingecko.com/api/v3/simple/price",
   pancake: "https://api.beefy.finance/pancake/price",
   lps: "https://api.beefy.finance/lps",
@@ -57,11 +56,6 @@ const fetchLP = async (id, endpoint) => {
   }
 };
 
-const oracleLpEndpoints = {
-  bakery: endpoints.bakery,
-  lps: endpoints.lps,
-};
-
 export const fetchPrice = async ({ oracle, id }) => {
   if (oracle === undefined) {
     console.error("Undefined oracle");
@@ -82,16 +76,16 @@ export const fetchPrice = async ({ oracle, id }) => {
       price = await fetchCoingecko(id);
       break;
 
+    case "bakery":
     case "pancake":
       price = await fetchPancake(id);
       break;
 
-    default:
-      price = 0;
-  }
+    case 'lps':
+      price = await fetchLP(id);
+      break;
 
-  if (price === 0 && oracleLpEndpoints[oracle]) {
-    price = await fetchLP(id, oracleLpEndpoints[oracle]);
+    default: price = 0;
   }
 
   addToCache({ oracle, id, price });
