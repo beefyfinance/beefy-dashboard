@@ -87,16 +87,14 @@ const fetchBifiHolders = async ({ setBifiHolders }) => {
 };
 
 const fetchBifiPrice = async ({ setBifiPrice, setMarketCap }) => {
-  const price = await fetchPrice({ oracle: "pancake", id: "BIFI" });
+  const price = await fetchPrice({ oracle: "tokens", id: "BIFI" });
   const mcap = formatTvl((80000 - 4000) * price);
   setBifiPrice(`$${price.toFixed(2)}`);
   setMarketCap(mcap);
 };
 
 const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
-  console.log("Fetching");
   let earnings = (await getEarnings()) || { daily: 0, total: 0 };
-  console.log("Sup", earnings);
   if (!earnings.total) {
     earnings.total = 0;
   }

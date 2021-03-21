@@ -3,7 +3,7 @@ import { apiCacheTime } from "./apiCacheTime";
 
 const endpoints = {
   coingecko: "https://api.coingecko.com/api/v3/simple/price",
-  pancake: "https://api.beefy.finance/pancake/price",
+  tokens: "https://api.beefy.finance/prices",
   lps: "https://api.beefy.finance/lps",
 };
 
@@ -37,9 +37,9 @@ const fetchCoingecko = async id => {
   }
 };
 
-const fetchPancake = async id => {
+const fetchTokens = async id => {
   try {
-    const response = await axios.get(`https://api.beefy.finance/pancake/price?_=${apiCacheTime()}`);
+    const response = await axios.get(`https://api.beefy.finance/prices?_=${apiCacheTime()}`);
     return response.data[id];
   } catch (err) {
     console.error(err);
@@ -77,9 +77,8 @@ export const fetchPrice = async ({ oracle, id }) => {
       price = await fetchCoingecko(id);
       break;
 
-    case "bakery":
-    case "pancake":
-      price = await fetchPancake(id);
+    case "tokens":
+      price = await fetchTokens(id);
       break;
 
     case 'lps':
