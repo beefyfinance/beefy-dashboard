@@ -29,7 +29,7 @@ export default function NavBar() {
 			<GenericMetric
 				name={t("Metric-BIFIStaked")}
 				metric="stakedBifi"
-				link="https://bscscan.com/token/0xCa3F508B8e4Dd382eE878A314789373D80A5190A?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#writeContract"
+				link="https://bscscan.com/token/0xCa3F508B8e4Dd382eE878A314789373D80A5190A?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics"
 			/>
 			<GenericMetric
 				name={t("Metric-BIFIHolders")}
@@ -46,12 +46,12 @@ export default function NavBar() {
 			<GenericMetric
 				name={t("Metric-BIFIPrice")}
 				metric="bifiPrice"
-				link="https://streetswap.vip/#/swap?outputCurrency=0xca3f508b8e4dd382ee878a314789373d80a5190a"
+				link="https://1inch.exchange/#/r/0xF4cb25a1FF50E319c267b3E51CBeC2699FB2A43B/BIFI/BUSD/?network=56"
 			/>
 			<GenericMetric
 				name={t("Metric-MarketCap")}
 				metric="marketCap"
-				link="https://streetswap.vip/#/swap?outputCurrency=0xca3f508b8e4dd382ee878a314789373d80a5190a"
+				link="https://coinmarketcap.com/currencies/beefy-finance/"
 			/>
 		</Metrics>
 	);
