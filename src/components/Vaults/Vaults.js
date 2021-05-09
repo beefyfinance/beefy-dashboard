@@ -24,7 +24,8 @@ export default function BasicTable() {
 					{sortedVaults.map((row) => (
 						<TableRow key={row.id}>
               <TableCell>
-                <div>{row.name}</div>
+                <ContractAddress href={`https://app.beefy.finance/vault/${row.id}`} target="_blank"
+                                 rel="noreferrer">{row.name}</ContractAddress>
                 <div>{`${row.tokenDescription} / ${row.platform}`}</div>
               </TableCell>
 							<TableCell>
