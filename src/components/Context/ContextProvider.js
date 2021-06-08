@@ -129,7 +129,8 @@ const ContextProvider = ({ children }) => {
         stakedBifi,
         bifiHolders,
         bifiPrice,
-        marketCap
+        marketCap,
+        chainId
       }}
     >
       {children}
