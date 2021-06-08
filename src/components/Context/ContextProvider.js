@@ -1,44 +1,22 @@
 import { createContext, useState, useEffect } from "react";
-import { ethers, utils, BigNumber } from "ethers";
+import { ethers, utils } from "ethers";
 
-import BeefyVault from "../../abis/BeefyVault.json";
 import ERC20 from "../../abis/ERC20.json";
 
-import addr from "../../data/addresses";
+import addresses from "../../data/addresses";
 
+import useWeb3 from "../../hooks/useWeb3";
 import { fetchPrice } from "../../utils/fetchPrice";
 import { getHolders } from "../../utils/getHolders";
 import { getEarnings } from "../../utils/getEarnings";
 import { formatTvl } from "../../utils/format";
 import { getVaults } from "../../utils/getVaults";
+import { fetchVaultsTvl } from "../../utils/fetchChainVaults";
 
 export const VaultsContext = createContext(null);
 
-const fetchVaultTvl = async ({ vault, signer }) => {
-  try {
-    const vaultContract = new ethers.Contract(vault.earnedTokenAddress, BeefyVault, signer);
-    const vaultBalance = await vaultContract.balance();
-
-    const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });
-    const normalizationFactor = 100000;
-    const normalizedPrice = BigNumber.from(Math.round(price * normalizationFactor));
-    const vaultBalanceInUsd = vaultBalance.mul(normalizedPrice);
-    const result = vaultBalanceInUsd.div(normalizationFactor);
-
-    const vaultObjTvl = utils.formatEther(result);
-    vault.tvl = Number(vaultObjTvl).toFixed(2);
-
-    return result;
-  } catch (err) {
-    console.log("error fetching price tvl:", vault.oracleId, vault.oracle);
-    return 0;
-  }
-};
-
-const fetchGlobalTvl = async ({ vaults, signer, setGlobalTvl }) => {
-  let promises = [];
-  vaults.forEach(vault => promises.push(fetchVaultTvl({ vault, signer })));
-  await Promise.all(promises);
+const fetchGlobalTvl = async ({ vaults, web3, chainId, setGlobalTvl }) => {
+  await fetchVaultsTvl({ vaults, web3, chainId });
 
   let globalTvl = 0;
 
@@ -62,19 +40,23 @@ const fetchBalance = async ({ token, address, signer }) => {
   return await contract.balanceOf(address);
 };
 
-const fetchTreasuryBalance = async ({ signer, setTreasury }) => {
+const fetchTreasuryBalance = async ({ signer, chainId, setTreasury }) => {
+  if (!chainId) return;
+  const addr = addresses[chainId.toString()];
   const values = await Promise.all([
     fetchBalance({ token: addr.BIFI, address: addr.Treasury, signer }),
-    fetchBalance({ token: addr.WBNB, address: addr.Treasury, signer }),
+    fetchBalance({ token: addr.WBNB, address: addr.Treasury, signer })
   ]);
 
   setTreasury({
     BIFI: Number(utils.formatEther(values[0])).toFixed(2),
-    WBNB: Number(utils.formatEther(values[1])).toFixed(2),
+    WBNB: Number(utils.formatEther(values[1])).toFixed(2)
   });
 };
 
-const fetchStakedBifi = async ({ provider, signer, setStakedBifi }) => {
+const fetchStakedBifi = async ({ signer, chainId, setStakedBifi }) => {
+  if (!chainId) return;
+  const addr = addresses[chainId.toString()];
   const values = await fetchBalance({ token: addr.BIFI, address: addr.RewardPool, signer });
   const stakedBifi = Number(utils.formatEther(values));
   const percentage = (stakedBifi / (80000 - 4000)) * 100;
@@ -102,17 +84,13 @@ const fetchEarnings = async ({ setDailyEarnings, setTotalEarnings }) => {
     earnings.total = Number(earnings.total) / 1e18;
   }
 
-  setDailyEarnings(earnings.daily.toFixed(2));
-  setTotalEarnings(earnings.total.toFixed(2));
-};
-
-const fetchVaults = async setVaults => {
-  setVaults(await getVaults());
+  setDailyEarnings(earnings.daily?.toFixed(2) ?? 0);
+  setTotalEarnings(earnings.total?.toFixed(2) ?? 0);
 };
 
 const ContextProvider = ({ children }) => {
   const [vaultCount, setVaultCount] = useState(0);
-  const [globalTvl, setGlobalTvl] = useState(BigNumber.from(0));
+  const [globalTvl, setGlobalTvl] = useState(0);
   const [treasury, setTreasury] = useState({ BIFI: 0, WBNB: 0 });
   const [stakedBifi, setStakedBifi] = useState(0);
   const [bifiHolders, setBifiHolders] = useState(0);
@@ -121,20 +99,19 @@ const ContextProvider = ({ children }) => {
   const [dailyEarnings, setDailyEarnings] = useState(0);
   const [totalEarnings, setTotalEarnings] = useState(0);
   const [vaults, setVaults] = useState([]);
+  const { provider, signer, chainId, web3 } = useWeb3();
+
+  provider?.provider?.on("chainChanged", () => window.location.reload());
 
   useEffect(() => {
-    fetchVaults(setVaults);
-  }, []);
+    getVaults(chainId).then((vaults) => setVaults(vaults));
+  }, [chainId]);
 
   useEffect(() => {
-    // FIXME: is there a safer way to fetch the provider?
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = provider.getSigner();
-
     setVaultCount(vaults.filter(vault => vault.status === "active").length);
-    fetchGlobalTvl({ vaults, signer, setGlobalTvl });
-    fetchTreasuryBalance({ signer, setTreasury });
-    fetchStakedBifi({ provider, signer, setStakedBifi });
+    fetchGlobalTvl({ vaults, web3, chainId, setGlobalTvl });
+    fetchTreasuryBalance({ signer, chainId, setTreasury });
+    fetchStakedBifi({ signer, chainId, setStakedBifi });
     fetchBifiHolders({ setBifiHolders });
     fetchBifiPrice({ setBifiPrice, setMarketCap });
     fetchEarnings({ setDailyEarnings, setTotalEarnings });
@@ -152,7 +129,7 @@ const ContextProvider = ({ children }) => {
         stakedBifi,
         bifiHolders,
         bifiPrice,
-        marketCap,
+        marketCap
       }}
     >
       {children}
