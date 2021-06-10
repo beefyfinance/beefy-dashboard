@@ -19,7 +19,7 @@ const apps = {
 };
 
 const explorers = {
-  56: "bscscan.com", 137: "explorer-mainnet.maticvigil.com"
+  56: "bscscan.com", 137: "polygonscan.com"
 };
 
 export default function BasicTable() {

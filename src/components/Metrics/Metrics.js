@@ -13,12 +13,12 @@ const rewardTokens = {
 
 const treasuryLinks = {
   56: "https://bscscan.com/address/0x4a32de8c248533c28904b24b4cfcfe18e9f2ad01",
-  137: "https://explorer-mainnet.maticvigil.com/address/0x09EF0e7b555599A9F810789FfF68Db8DBF4c51a0/tokens"
+  137: "https://polygonscan.com/address/0x09EF0e7b555599A9F810789FfF68Db8DBF4c51a0"
 };
 
 const stakedLinks = {
   56: "https://bscscan.com/token/0xCa3F508B8e4Dd382eE878A314789373D80A5190A?a=0x453D4Ba9a2D594314DF88564248497F7D74d6b2C#tokenAnalytics",
-  137: "https://explorer-mainnet.maticvigil.com/address/0xDeB0a777ba6f59C78c654B8c92F80238c8002DD2/tokens"
+  137: "https://polygonscan.com/address/0xDeB0a777ba6f59C78c654B8c92F80238c8002DD2"
 };
 
 export default function NavBar() {
