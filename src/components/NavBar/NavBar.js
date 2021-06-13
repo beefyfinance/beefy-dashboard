@@ -1,15 +1,14 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import {
-  Nav,
-	NavSection,
-	NavLogo,
-  NavName,
-  NavBtn
-} from './style';
+import React, {useContext} from 'react';
+import {useTranslation} from 'react-i18next';
+import {Nav, NavBtn, NavLogo, NavName, NavSection} from './style';
+import {VaultsContext} from '../Context/ContextProvider';
+import {getChainAppLink} from '../../utils/chainHelpers';
 
 export default function NavBar() {
     const { t } = useTranslation();
+	const { chainId } = useContext(VaultsContext);
+	const appLink = getChainAppLink(chainId);
+
     return (
 		<Nav>
 			<NavSection>
@@ -17,7 +16,7 @@ export default function NavBar() {
         <NavName href='https://dashboard.beefy.finance'>dashboard</NavName>
 			</NavSection>
 			<NavSection>
-				<NavBtn href='https://app.beefy.finance' target="_blank" rel="noreferrer">{t("LaunchApp")}</NavBtn>
+				<NavBtn href={appLink} target="_blank" rel="noreferrer">{t("LaunchApp")}</NavBtn>
 			</NavSection>
 		</Nav>
 	);
