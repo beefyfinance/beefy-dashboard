@@ -21,7 +21,7 @@ const providerOptions = {
         128: 'https://http-mainnet.hecochain.com',
         137: 'https://rpc-mainnet.maticvigil.com',
         250: 'https://rpc.ftm.tools',
-		43114: 'https://api.avax.network/ext/bc/C/rpc',
+        43114: 'https://api.avax.network/ext/bc/C/rpc',
       },
     },
   },
