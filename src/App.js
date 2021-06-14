@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
-import Web3 from "web3";
-import Web3Modal from "web3modal";
+import Web3 from 'web3';
+import Web3Modal from 'web3modal';
 import WalletConnectProvider from '@walletconnect/web3-provider';
 
 import ContextProvider from './components/Context/ContextProvider';
@@ -17,9 +17,11 @@ const providerOptions = {
     package: WalletConnectProvider,
     options: {
       rpc: {
-        1: 'https://bsc-dataseed.binance.org/',
-        56: 'https://bsc-dataseed.binance.org/',
-        97: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+        56: 'https://bsc-dataseed.binance.org',
+        128: 'https://http-mainnet.hecochain.com',
+        137: 'https://rpc-mainnet.maticvigil.com',
+        250: 'https://rpc.ftm.tools',
+        43114: 'https://api.avax.network/ext/bc/C/rpc',
       },
     },
   },

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
-
 import { VaultsContext } from "../Context/ContextProvider";
 import { formatTvl } from "../../utils/format";
 import {
@@ -13,19 +12,14 @@ import {
   ContractAddress,
   ContractTVL
 } from "./style";
-
-const apps = {
-  56: "app", 137: "polygon"
-};
-
-const explorers = {
-  56: "bscscan.com", 137: "polygonscan.com"
-};
+import {getChainAppLink, getChainExplorerLink} from '../../utils/chainHelpers';
 
 export default function BasicTable() {
   const { vaults, chainId } = useContext(VaultsContext);
   const { t } = useTranslation();
   const sortedVaults = vaults.sort((a, b) => Number(b.tvl) - Number(a.tvl));
+  const appLink = getChainAppLink(chainId);
+  const explorerLink = getChainExplorerLink(chainId);
 
   return (
     <TableContainer>
@@ -41,12 +35,12 @@ export default function BasicTable() {
           {sortedVaults.map((row) => (
             <TableRow key={row.id}>
               <TableCell>
-                <ContractAddress href={`https://${apps[chainId]}.beefy.finance/vault/${row.id}`} target="_blank"
+                <ContractAddress href={`${appLink}/vault/${row.id}`} target="_blank"
                                  rel="noreferrer">{row.name}</ContractAddress>
                 <div>{`${row.tokenDescription} / ${row.platform}`}</div>
               </TableCell>
               <TableCell>
-                <ContractAddress href={`https://${explorers[chainId]}/address/${row.earnContractAddress}`}
+                <ContractAddress href={`${explorerLink}/address/${row.earnContractAddress}`}
                                  target="_blank"
                                  rel="noreferrer">{row.earnContractAddress}</ContractAddress>
               </TableCell>
