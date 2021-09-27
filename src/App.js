@@ -22,6 +22,8 @@ const providerOptions = {
         137: 'https://rpc-mainnet.maticvigil.com',
         250: 'https://rpc.ftm.tools',
         43114: 'https://api.avax.network/ext/bc/C/rpc',
+        1666600000: 'https://api.harmony.one',
+        42161: 'https://arb1.arbitrum.io/rpc',
       },
     },
   },
