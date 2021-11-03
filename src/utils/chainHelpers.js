@@ -6,6 +6,8 @@ const vaultEndpoints = {
 	43114: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/avalanche_pools.js',
 	1666600000: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/harmony_pools.js',
 	42161: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/arbitrum_pools.js',
+	42220: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/celo_pools.js',
+	1285: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/moonriver_pools.js',
 };
 
 const apps = {
@@ -15,7 +17,9 @@ const apps = {
 	250: 'https://app.beefy.finance/#/fantom',
 	43114: 'https://app.beefy.finance/#/avax',
 	1666600000: 'https://app.beefy.finance/#/harmony',
-	42161: 'https://app.beefy.finance/#/arbitrum'
+	42161: 'https://app.beefy.finance/#/arbitrum',
+	42220: 'https://app.beefy.finance/#/celo',
+	1285: 'https://app.beefy.finance/#/moonriver'
 };
 
 const explorers = {
@@ -26,6 +30,8 @@ const explorers = {
 	43114: 'https://cchain.explorer.avax.network',
 	1666600000: 'https://explorer.harmony.one',
 	42161: 'https://arbiscan.io',
+	42220: 'https://explorer.celo.org',
+	1285: 'https://moonriver.moonscan.io',
 };
 
 const rewardTokens = {
@@ -36,6 +42,8 @@ const rewardTokens = {
 	43114: 'AVAX',
 	1666600000: 'ONE',
 	42161: 'ETH',
+	42220: 'CELO',
+	1285: 'MOVR'
 };
 
 const treasuryLinks = {
@@ -46,6 +54,8 @@ const treasuryLinks = {
 	43114: 'https://cchain.explorer.avax.network/address/0xA3e3Af161943CfB3941B631676134bb048739727',
 	1666600000: 'https://explorer.harmony.one/address/0xadb9ddfa24e326dc9d337561f6c7ba2a6ecec697',
 	42161: 'https://arbiscan.io/address/0xc3a4fdcba79DB04b4C3e352b1C467B3Ba909D84A',
+	42220: 'https://explorer.celo.org/address/0xd9F2Da642FAA1307e4F70a5E3aC31b9bfe920eAF',
+	1285: 'https://moonriver.moonscan.io/address/0xB6Fb58eea08b5539f371A744bb9Ef86283F1B3c2',
 };
 
 const stakedLinks = {
@@ -56,6 +66,8 @@ const stakedLinks = {
 	43114: 'https://cchain.explorer.avax.network/address/0xA3e3Af161943CfB3941B631676134bb048739727/tokens',
 	1666600000: 'https://explorer.harmony.one/address/0x6ab6d61428fde76768d7b45d8bfeec19c6ef91a8?activeTab=0',
 	42161: 'https://arbiscan.io/token/0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae?a=0x48f4634c8383af01bf71aefbc125eb582eb3c74d',
+	42220: 'https://explorer.celo.org/address/0x2D250016E3621CfC50A0ff7e5f6E34bbC6bfE50E/tokens',
+	1285: 'https://moonriver.moonscan.io/token/0x173fd7434B8B50dF08e3298f173487ebDB35FD14?a=0x4Aabd0d73181325DD1609Ce696eF048702DE7153',
 };
 
 const buyLinks = {
@@ -66,6 +78,8 @@ const buyLinks = {
 	43114: 'https://app.1inch.io/#/r/0xF4cb25a1FF50E319c267b3E51CBeC2699FB2A43B',
 	1666600000: 'https://multichain.xyz/',
 	42161: 'https://multichain.xyz/',
+	42220: 'https://multichain.xyz/',
+	1285: 'https://multichain.xyz/'
 };
 
 export function getChainAppLink(chainId) {
