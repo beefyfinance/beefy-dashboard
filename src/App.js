@@ -24,6 +24,8 @@ const providerOptions = {
         43114: 'https://api.avax.network/ext/bc/C/rpc',
         1666600000: 'https://api.harmony.one',
         42161: 'https://arb1.arbitrum.io/rpc',
+        42220: 'https://forno.celo.org',
+        1285: 'https://rpc.moonriver.moonbeam.network',
       },
     },
   },
