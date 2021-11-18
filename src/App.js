@@ -26,6 +26,7 @@ const providerOptions = {
         42161: 'https://arb1.arbitrum.io/rpc',
         42220: 'https://forno.celo.org',
         1285: 'https://rpc.moonriver.moonbeam.network',
+        25: 'https://evm-cronos.crypto.org',
       },
     },
   },
