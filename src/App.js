@@ -27,6 +27,7 @@ const providerOptions = {
         42220: 'https://forno.celo.org',
         1285: 'https://rpc.moonriver.moonbeam.network',
         25: 'https://evm-cronos.crypto.org',
+        122: 'https://rpc.fuse.io',
       },
     },
   },
