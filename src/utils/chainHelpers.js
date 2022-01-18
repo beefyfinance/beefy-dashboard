@@ -10,6 +10,7 @@ const vaultEndpoints = {
 	1285: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/moonriver_pools.js',
 	25: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/cronos_pools.js',
 	122: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/fuse_pools.js',
+	1088: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/metis_pools.js',
 };
 
 const apps = {
@@ -23,7 +24,8 @@ const apps = {
 	42220: 'https://app.beefy.finance/#/celo',
 	1285: 'https://app.beefy.finance/#/moonriver',
 	25: 'https://app.beefy.finance/#/cronos',
-	122: 'https://app.beefy.finance/#/fuse'
+	122: 'https://app.beefy.finance/#/fuse',
+	1088: 'https://app.beefy.finance/#/metis',
 };
 
 const explorers = {
@@ -38,6 +40,7 @@ const explorers = {
 	1285: 'https://moonriver.moonscan.io',
 	25: 'https://cronos.crypto.org/explorer/',
 	122: 'https://explorer.fuse.io/',
+	1088: 'https://andromeda-explorer.metis.io/',
 };
 
 const rewardTokens = {
@@ -52,6 +55,7 @@ const rewardTokens = {
 	1285: 'MOVR',
 	25: 'CRO',
 	122: 'FUSE',
+	1088: 'METIS',
 };
 
 const treasuryLinks = {
@@ -66,6 +70,7 @@ const treasuryLinks = {
 	1285: 'https://moonriver.moonscan.io/address/0xB6Fb58eea08b5539f371A744bb9Ef86283F1B3c2',
 	25: 'https://cronos.crypto.org/explorer/address/0x3f385082Ee3dFf58ca0a6a7fe44Ea0B5d6b4168E',
 	122: 'https://explorer.fuse.io/address/0x922f8807E781739DDefEe51df990457B522cBCf5',
+	1088: 'https://explorer.fuse.io/address/0x0f9602B7E7146a9BaE16dB948281BebDb7C2D095',
 };
 
 const stakedLinks = {
@@ -80,6 +85,7 @@ const stakedLinks = {
 	1285: 'https://moonriver.moonscan.io/token/0x173fd7434B8B50dF08e3298f173487ebDB35FD14?a=0x4Aabd0d73181325DD1609Ce696eF048702DE7153',
 	25: 'https://cronos.crypto.org/explorer/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
 	122: 'https://explorer.fuse.io/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
+	1088: 'https://explorer.fuse.io/address/0x2a30C5e0d577108F694d2A96179cd73611Ee069b',
 };
 
 const buyLinks = {
@@ -93,7 +99,8 @@ const buyLinks = {
 	42220: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C',
 	1285: 'https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x173fd7434B8B50dF08e3298f173487ebDB35FD14',
 	25: 'https://multichain.xyz/',
-	122: 'https://app.fuse.fi/#/swap'
+	122: 'https://app.fuse.fi/#/swap',
+	1088: 'https://netswap.io/#/swap?inputCurrency=0xe6801928061cdbe32ac5ad0634427e140efd05f9',
 };
 
 export function getChainAppLink(chainId) {
