@@ -11,6 +11,7 @@ const vaultEndpoints = {
 	25: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/cronos_pools.js',
 	122: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/fuse_pools.js',
 	1088: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/metis_pools.js',
+	1313161554: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/aurora_pools.js',
 };
 
 const apps = {
@@ -26,6 +27,7 @@ const apps = {
 	25: 'https://app.beefy.finance/#/cronos',
 	122: 'https://app.beefy.finance/#/fuse',
 	1088: 'https://app.beefy.finance/#/metis',
+	1313161554: 'https://app.beefy.finance/#/aurora',
 };
 
 const explorers = {
@@ -38,9 +40,10 @@ const explorers = {
 	42161: 'https://arbiscan.io',
 	42220: 'https://explorer.celo.org',
 	1285: 'https://moonriver.moonscan.io',
-	25: 'https://cronos.crypto.org/explorer/',
+	25: 'https://cronoscan.com/',
 	122: 'https://explorer.fuse.io/',
 	1088: 'https://andromeda-explorer.metis.io/',
+	1313161554: 'https://explorer.mainnet.aurora.dev/',
 };
 
 const rewardTokens = {
@@ -56,6 +59,7 @@ const rewardTokens = {
 	25: 'CRO',
 	122: 'FUSE',
 	1088: 'METIS',
+	1313161554: 'ETH',
 };
 
 const treasuryLinks = {
@@ -68,9 +72,11 @@ const treasuryLinks = {
 	42161: 'https://arbiscan.io/address/0xc3a4fdcba79DB04b4C3e352b1C467B3Ba909D84A',
 	42220: 'https://explorer.celo.org/address/0xd9F2Da642FAA1307e4F70a5E3aC31b9bfe920eAF',
 	1285: 'https://moonriver.moonscan.io/address/0xB6Fb58eea08b5539f371A744bb9Ef86283F1B3c2',
-	25: 'https://cronos.crypto.org/explorer/address/0x3f385082Ee3dFf58ca0a6a7fe44Ea0B5d6b4168E',
+	25: 'https://cronoscan.com/address/0x3f385082Ee3dFf58ca0a6a7fe44Ea0B5d6b4168E',
 	122: 'https://explorer.fuse.io/address/0x922f8807E781739DDefEe51df990457B522cBCf5',
-	1088: 'https://explorer.fuse.io/address/0x0f9602B7E7146a9BaE16dB948281BebDb7C2D095',
+	1088: 'https://andromeda-explorer.metis.io/address/0x0f9602B7E7146a9BaE16dB948281BebDb7C2D095/',
+	1313161554: 'https://explorer.mainnet.aurora.dev/address/0x8c2d54BA94f4638f1bb91f623F378B66d6023324/'
+
 };
 
 const stakedLinks = {
@@ -85,7 +91,8 @@ const stakedLinks = {
 	1285: 'https://moonriver.moonscan.io/token/0x173fd7434B8B50dF08e3298f173487ebDB35FD14?a=0x4Aabd0d73181325DD1609Ce696eF048702DE7153',
 	25: 'https://cronos.crypto.org/explorer/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
 	122: 'https://explorer.fuse.io/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
-	1088: 'https://explorer.fuse.io/address/0x2a30C5e0d577108F694d2A96179cd73611Ee069b',
+	1088: 'https://andromeda-explorer.metis.io/address/0x2a30C5e0d577108F694d2A96179cd73611Ee069b/',
+	1313161554: 'https://explorer.mainnet.aurora.dev/address/0xE6ab45f5e93FA377D0c4cC097187Ab7256c2AEBf/'
 };
 
 const buyLinks = {
@@ -101,6 +108,7 @@ const buyLinks = {
 	25: 'https://multichain.xyz/',
 	122: 'https://app.fuse.fi/#/swap',
 	1088: 'https://netswap.io/#/swap?inputCurrency=0xe6801928061cdbe32ac5ad0634427e140efd05f9',
+	1313161554: '',
 };
 
 export function getChainAppLink(chainId) {
