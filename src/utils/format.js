@@ -7,3 +7,9 @@ export const formatTvl = (tvl) => {
 
   return `$ ${num.toFixed(2)}${units[order]}`;
 };
+
+export const formatUnixToDateTime = (timestamp) => {
+  if(timestamp === 0 ) return "Never";
+  const dateAsDate = new Date(timestamp * 1000);
+  return `${dateAsDate.toLocaleDateString() + ' ' + dateAsDate.toLocaleTimeString()}`;
+}

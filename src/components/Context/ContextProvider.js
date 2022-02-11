@@ -10,7 +10,7 @@ import { fetchPrice } from "../../utils/fetchPrice";
 import { getHolders } from "../../utils/getHolders";
 import { getEarnings } from "../../utils/getEarnings";
 import { formatTvl } from "../../utils/format";
-import { getVaults } from "../../utils/getVaults";
+import { getVaults, getVaultsFromBeefyApi } from "../../utils/getVaults";
 import { fetchVaultsTvl } from "../../utils/fetchChainVaults";
 
 export const VaultsContext = createContext(null);
@@ -104,7 +104,17 @@ const ContextProvider = ({ children }) => {
   provider?.provider?.on("chainChanged", () => window.location.reload());
 
   useEffect(() => {
-    getVaults(chainId).then((vaults) => setVaults(vaults));
+    Promise.all([getVaults(chainId), getVaultsFromBeefyApi()])
+    .then(values => {
+      const vaults = values[0];
+      const apiVaults = values[1];
+      const vaultsWithLastHarvested = vaults.map(v => {
+        v.lastHarvest = apiVaults.find(av => av.id === v.id).lastHarvest;
+        return v;
+      })
+      setVaults(vaultsWithLastHarvested);
+    });
+
   }, [chainId]);
 
   useEffect(() => {
