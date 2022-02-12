@@ -12,6 +12,7 @@ const vaultEndpoints = {
 	122: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/fuse_pools.js',
 	1088: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/metis_pools.js',
 	1313161554: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/aurora_pools.js',
+	1285: 'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/moonbeam_pools.js',
 };
 
 const apps = {
@@ -28,6 +29,7 @@ const apps = {
 	122: 'https://app.beefy.finance/#/fuse',
 	1088: 'https://app.beefy.finance/#/metis',
 	1313161554: 'https://app.beefy.finance/#/aurora',
+	1284:  'https://app.beefy.finance/#/moonbeam',
 };
 
 const explorers = {
@@ -44,6 +46,7 @@ const explorers = {
 	122: 'https://explorer.fuse.io/',
 	1088: 'https://andromeda-explorer.metis.io/',
 	1313161554: 'https://explorer.mainnet.aurora.dev/',
+	1284: 'https://moonscan.io/'
 };
 
 const rewardTokens = {
@@ -60,6 +63,7 @@ const rewardTokens = {
 	122: 'FUSE',
 	1088: 'METIS',
 	1313161554: 'ETH',
+	1284: 'GLMR',
 };
 
 const treasuryLinks = {
@@ -75,7 +79,8 @@ const treasuryLinks = {
 	25: 'https://cronoscan.com/address/0x3f385082Ee3dFf58ca0a6a7fe44Ea0B5d6b4168E',
 	122: 'https://explorer.fuse.io/address/0x922f8807E781739DDefEe51df990457B522cBCf5',
 	1088: 'https://andromeda-explorer.metis.io/address/0x0f9602B7E7146a9BaE16dB948281BebDb7C2D095/',
-	1313161554: 'https://explorer.mainnet.aurora.dev/address/0x8c2d54BA94f4638f1bb91f623F378B66d6023324/'
+	1313161554: 'https://explorer.mainnet.aurora.dev/address/0x8c2d54BA94f4638f1bb91f623F378B66d6023324/',
+	1284: 'https://moonscan.io/address/0x3E7F60B442CEAE0FE5e48e07EB85Cfb1Ed60e81A',
 
 };
 
@@ -92,7 +97,8 @@ const stakedLinks = {
 	25: 'https://cronos.crypto.org/explorer/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
 	122: 'https://explorer.fuse.io/address/0x107Dbf9c9C0EF2Df114159e5C7DC2baf7C444cFF',
 	1088: 'https://andromeda-explorer.metis.io/address/0x2a30C5e0d577108F694d2A96179cd73611Ee069b/',
-	1313161554: 'https://explorer.mainnet.aurora.dev/address/0xE6ab45f5e93FA377D0c4cC097187Ab7256c2AEBf/'
+	1313161554: 'https://explorer.mainnet.aurora.dev/address/0xE6ab45f5e93FA377D0c4cC097187Ab7256c2AEBf/',
+	1284: 'https://moonscan.io/address/0x1198f78efd67DFc917510aaA07d49545f4B24f11',
 };
 
 const buyLinks = {
@@ -109,6 +115,7 @@ const buyLinks = {
 	122: 'https://app.fuse.fi/#/swap',
 	1088: 'https://netswap.io/#/swap?inputCurrency=0xe6801928061cdbe32ac5ad0634427e140efd05f9',
 	1313161554: '',
+	1284: 'https://app.beamswap.io/exchange/swap?inputCurrency=0x595c8481c48894771ce8fade54ac6bf59093f9e8&outputCurrency=0xacc15dc74880c9944775448304b263d191c6077f'
 };
 
 export function getChainAppLink(chainId) {

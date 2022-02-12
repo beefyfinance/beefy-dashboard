@@ -30,6 +30,7 @@ const providerOptions = {
         122: 'https://rpc.fuse.io',
         1088: 'https://andromeda.metis.io/?owner=1088',
         1313161554: 'https://mainnet.aurora.dev',
+        1284: 'https://rpc.api.moonbeam.network'
       },
     },
   },
