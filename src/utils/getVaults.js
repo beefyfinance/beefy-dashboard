@@ -17,4 +17,17 @@ const getVaults = async (chainId) => {
   }
 };
 
-export { getVaults };
+const getVaultsFromBeefyApi = async () => {
+  console.log("get vaults FROM API");
+  try {
+    const vaultEndpoint = "https://api.beefy.finance/vaults";
+    const response = await axios.get(vaultEndpoint);
+    const data = response.data;
+    return data;
+  } catch (err) {
+    console.error(err);
+    return [];
+  }
+};
+
+export { getVaults, getVaultsFromBeefyApi };
